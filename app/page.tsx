@@ -1,9 +1,36 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import FaqSchema from '@/components/FaqSchema';
 import GetQuoteSection from '@/components/GetQuoteSection';
-import HeroContactForm from '@/components/HeroContactForm';
+import HeroSlider from '@/components/HeroSlider';
 import ServiceFaqSection from '@/components/ServiceFaqSection';
 import TechnologyStackSection from '@/components/TechnologyStackSection';
+import TestimonialSlider from '@/components/TestimonialSlider';
+import WorkShowcaseSlider from '@/components/WorkShowcaseSlider';
+
+const heroSlides = [
+  {
+    subheading: 'WEB & MOBILE APP DEVELOPMENT FOR AUSTRALIA, USA & NZ',
+    headline: 'Digital products that win, ',
+    headlineHighlight: 'in your time zone.',
+    description:
+      'We build high-performance web and mobile apps for ambitious brands in Australia, the USA, and New Zealand. Custom web development, mobile app development, UI/UX design, and ongoing support. Strategy to launch, in sync with your local hours.',
+  },
+  {
+    subheading: 'CUSTOM SOFTWARE & UI/UX',
+    headline: 'From idea to launch, ',
+    headlineHighlight: 'faster.',
+    description:
+      'Discovery, design, and development in one place. We help you validate, prototype, and ship products that users love—with clear timelines and transparent pricing.',
+  },
+  {
+    subheading: 'TRUSTED BY BRANDS IN AU, USA & NZ',
+    headline: 'Local partnership, ',
+    headlineHighlight: 'global capability.',
+    description:
+      'An Australian-owned studio with the technical firepower to compete anywhere. Get the reliability of a local partner and the scale of a global team.',
+  },
+];
 
 const stats = [
   { value: '50+', label: 'Projects delivered' },
@@ -76,58 +103,58 @@ const homeFaqs = [
   { q: "What's the typical project timeline?", a: "It depends on scope. We'll give you a clear timeline and milestones after we understand your brief." },
 ];
 
+const whyChoose = [
+  {
+    title: 'Agile delivery',
+    description: 'Short sprints, regular demos, and clear communication so you always know what\'s shipping next.',
+  },
+  {
+    title: 'Security-first',
+    description: 'Best practices from day one: secure auth, hardened infrastructure, and ongoing monitoring.',
+  },
+  {
+    title: 'ROI-focused',
+    description: 'We prioritise features that move the needle on revenue, retention, and efficiency.',
+  },
+  {
+    title: 'Time-zone overlap you can count on',
+    description: 'Daylight-friendly standups, async updates, and support that lines up with your workday.',
+  },
+];
+
+const homeShowcase = [
+  {
+    src: '/Home/Generated Image February 27, 2026 - 12_47PM.png',
+    alt: 'Laptop and phone showing Aussie App Studio projects on a clean desk setup.',
+    label: 'Product launches',
+    caption: 'App Store-ready visuals and polished marketing sites for your launch.',
+  },
+  {
+    src: '/Home/Generated Image February 27, 2026 - 1_40PM.png',
+    alt: 'Ultra-wide monitor with dark UI design boards open in a design tool.',
+    label: 'UX flows',
+    caption: 'Deep UX thinking with detailed user flows before we write code.',
+  },
+  {
+    src: '/Home/Generated Image February 27, 2026 - 1_41PM (1).png',
+    alt: 'Hand holding a phone with analytics dashboard in front of a laptop.',
+    label: 'Live dashboards',
+    caption: 'Real-time metrics and dashboards so you can see performance at a glance.',
+  },
+  {
+    src: '/Home/Generated Image February 27, 2026 - 1_42PM.png',
+    alt: 'Tablet and notebook on a wooden desk showing system architecture diagrams.',
+    label: 'System architecture',
+    caption: 'Scalable backend architectures planned out before implementation.',
+  },
+];
+
 export default function HomePage() {
+  const [primaryShowcase, ...otherShowcase] = homeShowcase;
   return (
     <>
       <FaqSchema />
-      {/* Hero: left = form, right = content */}
-      <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-gradient-to-br from-navy via-navy-deep to-navy-light text-white">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(6,182,212,0.15),transparent)]" />
-        <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '32px 32px' }} />
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan/50 to-transparent" />
-        <div className="max-w-content mx-auto px-6 md:px-10 py-24 md:py-32 w-full relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-center">
-            {/* Left: content */}
-            <div className="order-2 lg:order-1">
-              <p className="text-cyan-light font-body font-medium text-sm uppercase tracking-wider mb-6 animate-fade-in">
-                Web & mobile app development for Australia, USA & NZ
-              </p>
-              <h1 className="font-headline font-bold text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight mb-8 animate-fade-in">
-                Digital products that win, <span className="text-cyan-light">in your time zone.</span>
-              </h1>
-              <p className="text-lg md:text-xl text-slate-300 max-w-xl mb-10 leading-relaxed">
-                We build high-performance web and mobile apps for ambitious brands in Australia, the USA, and New Zealand. Custom web development, mobile app development, UI/UX design, and ongoing support. Strategy to launch, in sync with your local hours.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/contact"
-                  className="group inline-flex items-center gap-2 px-8 py-4 bg-cyan hover:bg-cyan-light text-navy font-body font-semibold rounded-2xl transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shadow-lg shadow-cyan/25 hover:shadow-cyan/40"
-                >
-                  Get a quote
-                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-                </Link>
-                <Link
-                  href="/work"
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl border-2 border-slate-400/60 hover:border-cyan-light hover:bg-white/5 text-white font-body font-semibold transition-all duration-300"
-                >
-                  See our work
-                </Link>
-              </div>
-            </div>
-            {/* Right: form card */}
-            <div className="order-1 lg:order-2">
-              <div className="relative max-w-md mx-auto lg:ml-auto lg:mr-0 p-6 md:p-8 rounded-2xl bg-white border border-slate-200 shadow-xl shadow-navy/20">
-                <div className="absolute right-0 bottom-0 w-1/2 h-1/2 rounded-tl-[100%] bg-gradient-to-tr from-cyan/10 to-transparent pointer-events-none" />
-                <h2 className="font-headline font-bold text-xl md:text-2xl text-navy mb-1">
-                  Discuss your project
-                </h2>
-                <p className="font-headline font-bold text-xl md:text-2xl text-cyan mb-6">needs</p>
-                <HeroContactForm />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSlider slides={heroSlides} autoPlayMs={7000} />
 
       {/* Stats strip */}
       <section className="relative -mt-px py-16 md:py-20 bg-white border-y border-slate-200">
@@ -170,12 +197,79 @@ export default function HomePage() {
       </section>
 
       {/* Social proof */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-content mx-auto px-6 md:px-10 text-center">
-          <p className="text-slate-600 text-lg font-body">
-            Trusted by teams across <span className="font-semibold text-navy">Sydney</span>, <span className="font-semibold text-navy">Melbourne</span>, <span className="font-semibold text-navy">Auckland</span>, and the <span className="font-semibold text-navy">US</span>.
-          </p>
-          <p className="text-slate-500 text-sm mt-2">Time-zone aligned collaboration for ambitious brands.</p>
+      <section className="relative py-18 md:py-20 bg-gradient-to-r from-slate-50 via-slate-50 to-slate-100 border-y border-slate-100 overflow-hidden">
+        <div className="pointer-events-none absolute inset-y-0 left-1/2 w-[480px] -translate-x-1/2 bg-[radial-gradient(circle_at_center,rgba(8,145,178,0.14),transparent_65%)] opacity-70" />
+        <div className="max-w-content mx-auto px-6 md:px-10 relative">
+          <div className="grid gap-10 lg:gap-16 lg:grid-cols-[1.15fr_minmax(0,0.95fr)] items-center">
+            <div>
+              <p className="text-[11px] font-semibold tracking-[0.26em] uppercase text-cyan mb-3">
+                Trusted in multiple time zones
+              </p>
+              <h2 className="font-headline font-bold text-2xl md:text-3xl text-navy mb-3">
+                A distributed studio that still feels local
+              </h2>
+              <p className="text-slate-700 text-base md:text-lg leading-relaxed">
+                Teams in{' '}
+                <span className="font-semibold text-navy">Sydney</span>,{' '}
+                <span className="font-semibold text-navy">Melbourne</span>,{' '}
+                <span className="font-semibold text-navy">Auckland</span>, and across the{' '}
+                <span className="font-semibold text-navy">US</span> rely on us for web and mobile product work that ships
+                on time&mdash;without late-night calls.
+              </p>
+              <p className="text-slate-500 text-sm mt-3 max-w-xl">
+                We plan around your calendar, not the other way around: shared stand‑ups in your daylight hours,
+                async updates, and response times measured in hours, not days.
+              </p>
+            </div>
+
+            <div className="rounded-3xl bg-white/90 backdrop-blur-sm border border-slate-200/90 shadow-[0_18px_60px_rgba(15,23,42,0.15)] p-5 md:p-6">
+              <div className="flex items-center justify-between gap-4 mb-5">
+                <div>
+                  <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-slate-500">
+                    Regions we overlap with
+                  </p>
+                  <p className="font-headline font-semibold text-lg text-navy mt-1">
+                    AU, NZ & US time zones
+                  </p>
+                </div>
+                <span className="inline-flex items-center gap-2 rounded-full bg-cyan/10 text-cyan px-3 py-1 text-[11px] font-medium">
+                  <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                  Online in your workday
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 gap-3 mb-4">
+                {[
+                  { label: 'Product teams', detail: 'Roadmap-heavy, outcomes first.' },
+                  { label: 'Scale-ups', detail: 'Shipping fast without breaking things.' },
+                  { label: 'Agencies', detail: 'White-label delivery partner.' },
+                  { label: 'Innovation squads', detail: 'Experimental bets with clear guardrails.' },
+                ].map((item) => (
+                  <div
+                    key={item.label}
+                    className="rounded-2xl border border-slate-200 bg-slate-50/60 px-3 py-2.5 flex flex-col gap-0.5"
+                  >
+                    <div className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 rounded-full bg-cyan" />
+                      <p className="text-[11px] font-medium text-slate-800">{item.label}</p>
+                    </div>
+                    <p className="text-[10px] text-slate-500 leading-snug">
+                      {item.detail}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-200/80 mt-2">
+                <p className="text-[11px] text-slate-500">
+                  <span className="font-semibold text-slate-700">24h</span> average response time for new enquiries.
+                </p>
+                <p className="text-[11px] text-slate-500">
+                  <span className="font-semibold text-slate-700">100%</span> of projects run with time‑zone overlap.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -184,7 +278,9 @@ export default function HomePage() {
         <div className="max-w-content mx-auto px-6 md:px-10">
           <div className="text-center max-w-2xl mx-auto mb-20">
             <h2 className="font-headline font-bold text-3xl md:text-4xl text-navy mb-6">How we work</h2>
-            <p className="text-lg text-slate-600">From first conversation to launch and beyond, clear phases, clear communication.</p>
+            <p className="text-lg text-slate-600">
+              From first conversation to launch and beyond, clear phases, clear communication.
+            </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map(({ step, title, desc }) => (
@@ -205,21 +301,176 @@ export default function HomePage() {
       <TechnologyStackSection />
 
       {/* Why choose us */}
-      <section className="py-24 md:py-32 bg-white">
-        <div className="max-w-content mx-auto px-6 md:px-10">
-          <h2 className="font-headline font-bold text-3xl md:text-4xl text-navy mb-16 text-center">Why global brands choose us</h2>
-          <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {['Agile delivery', 'Security-first', 'ROI-focused', 'Time-zone overlap you can count on'].map((item) => (
-              <li key={item} className="flex items-center gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
-                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-cyan/15 flex items-center justify-center">
-                  <svg className="w-5 h-5 text-cyan" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </span>
-                <span className="font-body font-semibold text-navy">{item}</span>
-              </li>
-            ))}
-          </ul>
+      <section className="relative py-24 md:py-32 bg-gradient-to-b from-white via-slate-50 to-white overflow-hidden">
+        <div className="pointer-events-none absolute -right-40 top-0 h-80 w-80 rounded-full bg-cyan/10 blur-3xl" />
+        <div className="pointer-events-none absolute -left-32 bottom-0 h-72 w-72 rounded-full bg-navy/5 blur-2xl" />
+        <div className="max-w-content mx-auto px-6 md:px-10 relative">
+          <div className="grid lg:grid-cols-[1.05fr_1.1fr] gap-10 lg:gap-16 items-center">
+            <div>
+              <p className="text-cyan font-body font-semibold text-xs uppercase tracking-[0.25em] mb-4">
+                Why global brands choose us
+              </p>
+              <h2 className="font-headline font-bold text-3xl md:text-4xl text-navy mb-5">
+                A partner that feels in‑house, not offshore
+              </h2>
+              <p className="text-slate-600 text-base md:text-lg leading-relaxed mb-6 max-w-xl">
+                We combine local time‑zone overlap with senior engineering, design craft, and a ruthless focus on
+                outcomes. You get the reliability of an in‑house team, without the overhead.
+              </p>
+              <ul className="space-y-3 text-sm text-slate-600">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-cyan/10 text-cyan">
+                    <svg className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span>Transparent roadmaps, weekly check‑ins, and async updates that fit your workday.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-cyan/10 text-cyan">
+                    <svg className="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span>Design, engineering, QA and DevOps under one roof for smoother launches.</span>
+                </li>
+              </ul>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-5 md:gap-6">
+              {whyChoose.map(({ title, description }) => (
+                <div
+                  key={title}
+                  className="group relative overflow-hidden rounded-2xl bg-white border border-slate-200 shadow-card hover:-translate-y-1.5 hover:shadow-card-hover hover:border-cyan/40 transition-all duration-300"
+                >
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-cyan/5 via-transparent to-navy/5 transition-opacity duration-300" />
+                  <div className="relative p-5 md:p-6">
+                    <div className="mb-4 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-cyan/10 text-cyan group-hover:bg-cyan group-hover:text-white transition-colors">
+                      <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="font-headline font-semibold text-base md:text-lg text-navy mb-2">{title}</h3>
+                    <p className="text-xs md:text-sm text-slate-600 leading-relaxed">{description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Studio visuals using Home images */}
+      <section className="relative py-20 md:py-24 bg-slate-950 overflow-hidden">
+        <div className="pointer-events-none absolute -right-40 top-10 h-72 w-72 rounded-full bg-cyan/15 blur-3xl" />
+        <div className="pointer-events-none absolute -left-40 -bottom-10 h-80 w-80 rounded-full bg-navy/40 blur-3xl" />
+        <div className="max-w-content mx-auto px-6 md:px-10 relative">
+          <div className="text-center max-w-2xl mx-auto mb-12 md:mb-14">
+            <p className="text-cyan-light font-body font-semibold text-xs uppercase tracking-[0.24em] mb-3">
+              Inside the studio
+            </p>
+            <h2 className="font-headline font-bold text-3xl md:text-4xl text-white mb-4">
+              A closer look at the products we design
+            </h2>
+            <p className="text-slate-300 text-base md:text-lg leading-relaxed">
+              Realistic snapshots from our day‑to‑day work: product dashboards, app flows and architecture views that
+              turn ideas into interfaces your team can actually ship.
+            </p>
+          </div>
+
+          {/* Mosaic collage */}
+          <div className="grid gap-4 md:gap-6 lg:gap-8 lg:grid-cols-12 items-stretch">
+            {/* Main feature image */}
+            <div className="lg:col-span-7">
+              <div className="group relative h-full rounded-3xl bg-slate-900 border border-slate-700/80 shadow-[0_26px_70px_rgba(15,23,42,0.95)] overflow-hidden">
+                <div className="relative w-full pt-[60%] md:pt-[55%]">
+                  <Image
+                    src={primaryShowcase.src}
+                    alt={primaryShowcase.alt}
+                    fill
+                    className="object-cover group-hover:scale-[1.03] transition-transform duration-500"
+                    sizes="(min-width: 1280px) 720px, (min-width: 1024px) 60vw, 100vw"
+                    priority
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-90" />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
+                  <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-cyan-light mb-1.5">
+                    {primaryShowcase.label}
+                  </p>
+                  <p className="text-sm text-slate-100 leading-relaxed">
+                    {primaryShowcase.caption}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Supporting images in a staggered grid */}
+            <div className="lg:col-span-5 flex flex-col gap-4 md:gap-5">
+              <div className="grid grid-cols-2 gap-4 md:gap-5">
+                {otherShowcase.slice(0, 2).map((item) => (
+                  <div
+                    key={item.alt}
+                    className="group relative rounded-2xl bg-slate-900 border border-slate-700/70 overflow-hidden hover:border-cyan/50 hover:shadow-[0_18px_45px_rgba(15,23,42,0.9)] transition-all duration-300"
+                  >
+                    <div className="relative w-full pt-[70%]">
+                      <Image
+                        src={item.src}
+                        alt={item.alt}
+                        fill
+                        className="object-cover group-hover:scale-[1.04] transition-transform duration-500"
+                        sizes="(min-width: 1280px) 320px, (min-width: 1024px) 28vw, 50vw"
+                      />
+                      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-90" />
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 p-3">
+                      <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-cyan-light mb-1">
+                        {item.label}
+                      </p>
+                      <p className="text-[11px] text-slate-100/95 line-clamp-2">
+                        {item.caption}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Bottom wide card */}
+              {otherShowcase[2] && (
+                <div className="group relative rounded-2xl bg-slate-900 border border-slate-700/70 overflow-hidden hover:border-cyan/50 hover:shadow-[0_18px_45px_rgba(15,23,42,0.9)] transition-all duration-300">
+                  <div className="relative w-full pt-[48%]">
+                    <Image
+                      src={otherShowcase[2].src}
+                      alt={otherShowcase[2].alt}
+                      fill
+                      className="object-cover group-hover:scale-[1.04] transition-transform duration-500"
+                      sizes="(min-width: 1280px) 420px, (min-width: 1024px) 32vw, 90vw"
+                    />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-90" />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
+                    <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-cyan-light mb-1">
+                      {otherShowcase[2].label}
+                    </p>
+                    <p className="text-[11px] md:text-xs text-slate-100/95 line-clamp-2">
+                      {otherShowcase[2].caption}
+                    </p>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -230,15 +481,7 @@ export default function HomePage() {
             <h2 className="font-headline font-bold text-3xl md:text-4xl text-navy mb-6">What our clients say</h2>
             <p className="text-slate-600">Real feedback from teams we’ve worked with across Australia and New Zealand.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((t) => (
-              <div key={t.author} className="p-8 rounded-2xl bg-white border border-slate-200 shadow-card">
-                <p className="text-slate-700 leading-relaxed mb-6">&ldquo;{t.quote}&rdquo;</p>
-                <p className="font-semibold text-navy">{t.author}</p>
-                <p className="text-slate-500 text-sm">{t.role}</p>
-              </div>
-            ))}
-          </div>
+          <TestimonialSlider items={testimonials} />
         </div>
       </section>
 
@@ -254,45 +497,8 @@ export default function HomePage() {
               View all work →
             </Link>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Link
-              href="/work"
-              className="group block overflow-hidden rounded-2xl bg-slate-100 border border-slate-200 shadow-card hover:shadow-card-hover transition-all duration-300"
-            >
-              <div className="aspect-[16/10] bg-gradient-to-br from-navy/5 to-cyan/5 flex items-center justify-center">
-                <div className="text-slate-400 group-hover:text-cyan transition-colors">
-                  <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                  <p className="text-sm font-medium">Case studies</p>
-                </div>
-              </div>
-              <div className="p-8">
-                <h3 className="font-headline font-semibold text-xl text-navy group-hover:text-cyan transition-colors">View our work</h3>
-                <p className="text-slate-600 text-sm mt-2">Web and mobile projects for brands in AU, NZ & US.</p>
-                <span className="inline-flex items-center gap-2 mt-4 text-cyan font-medium text-sm">
-                  View all work
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-                </span>
-              </div>
-            </Link>
-            <Link
-              href="/contact"
-              className="group block overflow-hidden rounded-2xl bg-navy border border-navy-light text-white shadow-card hover:shadow-card-glow hover:border-cyan/30 transition-all duration-300"
-            >
-              <div className="aspect-[16/10] bg-navy-light/50 flex items-center justify-center">
-                <div className="text-cyan-light/80 group-hover:text-cyan-light transition-colors">
-                  <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6m0 0v6m0-6h6m-6 0H6" /></svg>
-                  <p className="text-sm font-medium">Your project</p>
-                </div>
-              </div>
-              <div className="p-8">
-                <h3 className="font-headline font-semibold text-xl group-hover:text-cyan-light transition-colors">Start your project</h3>
-                <p className="text-slate-300 text-sm mt-2">Tell us your idea; we’ll reply within 24 hours.</p>
-                <span className="inline-flex items-center gap-2 mt-4 text-cyan-light font-medium text-sm">
-                  Get in touch
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-                </span>
-              </div>
-            </Link>
+          <div className="grid gap-8">
+            <WorkShowcaseSlider />
           </div>
         </div>
       </section>

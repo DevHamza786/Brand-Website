@@ -10,6 +10,7 @@ const navLinks = [
     label: 'Services',
     href: '/services',
     children: [
+      { label: 'All Services', href: '/services' },
       { label: 'Web Development', href: '/services/web-development' },
       { label: 'Mobile Apps', href: '/services/mobile-apps' },
       { label: 'UI/UX Design', href: '/services/ui-ux' },

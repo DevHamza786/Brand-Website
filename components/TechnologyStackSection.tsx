@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 
 type TechItem = { name: string; icon: React.ReactNode };
@@ -9,7 +10,6 @@ const techByCategory: Record<string, TechItem[]> = {
     { name: 'Node.js', icon: <NodeIcon /> },
     { name: 'Express', icon: <ExpressIcon /> },
     { name: 'Django', icon: <DjangoIcon /> },
-    { name: 'Go', icon: <GoIcon /> },
     { name: 'Laravel', icon: <LaravelIcon /> },
     { name: 'Symfony', icon: <SymfonyIcon /> },
     { name: 'ASP.NET Core', icon: <AspNetIcon /> },
@@ -57,8 +57,6 @@ const techByCategory: Record<string, TechItem[]> = {
     { name: 'Figma', icon: <FigmaIcon /> },
     { name: 'Adobe XD', icon: <XdIcon /> },
     { name: 'Sketch', icon: <SketchIcon /> },
-    { name: 'Prototyping', icon: <PrototypeIcon /> },
-    { name: 'Design Systems', icon: <DesignSystemIcon /> },
   ],
   CMS: [
     { name: 'Contentful', icon: <ContentfulIcon /> },
@@ -66,6 +64,67 @@ const techByCategory: Record<string, TechItem[]> = {
     { name: 'Strapi', icon: <StrapiIcon /> },
     { name: 'WordPress', icon: <WordPressIcon /> },
   ],
+};
+
+// Map tech names to logo files in /public/tech for optimized <Image /> usage
+const techLogoSrcByName: Record<string, string> = {
+  // Backend
+  'Node.js': '/tech/nodejs.png',
+  Express: '/tech/expressjs.png',
+  Django: '/tech/djongo.png',
+  Laravel: '/tech/laravel.png',
+  Symfony: '/tech/symfony.webp',
+  'ASP.NET Core': '/tech/asp.net.png',
+  NestJS: '/tech/nestjs.png',
+  Python: '/tech/python.png',
+  Java: '/tech/java.png',
+
+  // Frontend
+  React: '/tech/reactjs.jpg',
+  'Next.js': '/tech/next.js.png',
+  'Vue.js': '/tech/Vue js.png',
+  TypeScript: '/tech/TypeScript.png',
+  JavaScript: '/tech/Java Script.webp',
+  Angular: '/tech/Angular.jpg',
+  HTML5: '/tech/HTML5.jpg',
+  CSS3: '/tech/CSS3.webp',
+  'Tailwind CSS': '/tech/Tailwind CSS.png',
+  Redux: '/tech/Redux.png',
+
+  // Mobile
+  Flutter: '/tech/Flutter.png',
+  'React Native': '/tech/React Native.png',
+  Swift: '/tech/Swift.png',
+  Kotlin: '/tech/Kotlin.jpg',
+  Ionic: '/tech/Ionic.jpg',
+  Xamarin: '/tech/Xamarin.jpg',
+
+  // Database
+  PostgreSQL: '/tech/PostgreSQL.png',
+  MongoDB: '/tech/MongoDB.svg',
+  MySQL: '/tech/MySQL.png',
+  Redis: '/tech/Redis.png',
+  Firebase: '/tech/Firebase.png',
+  Supabase: '/tech/Supabase.jpg',
+
+  // DevOps
+  AWS: '/tech/AWS.webp',
+  Docker: '/tech/Docker.png',
+  Kubernetes: '/tech/Kubernetes.png',
+  'GitHub Actions': '/tech/GitHub Actions.png',
+  Vercel: '/tech/Vercel.svg',
+  'CI/CD': '/tech/CI=CD.webp',
+
+  // UI/UX
+  Figma: '/tech/Figma.png',
+  'Adobe XD': '/tech/Adobe XD.jpg',
+  Sketch: '/tech/Sketch.png',
+
+  // CMS
+  Contentful: '/tech/Contentful.png',
+  Sanity: '/tech/Sanity.png',
+  Strapi: '/tech/Strapi.webp',
+  WordPress: '/tech/WordPress.png',
 };
 
 const tabs = Object.keys(techByCategory);
@@ -434,19 +493,34 @@ export default function TechnologyStackSection() {
         </div>
 
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 gap-6 md:gap-8">
-          {techByCategory[activeTab].map(({ name, icon }) => (
-            <div
-              key={name}
-              className="flex flex-col items-center justify-center p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-cyan/20 hover:shadow-card transition-all duration-200"
-            >
-              <div className="flex items-center justify-center w-14 h-14 mb-3 text-slate-600 [&>svg]:shrink-0">
-                {icon}
+          {techByCategory[activeTab].map(({ name, icon }) => {
+            const logoSrc = techLogoSrcByName[name];
+
+            return (
+              <div
+                key={name}
+                className="flex flex-col items-center justify-center p-5 rounded-xl bg-slate-50 border border-slate-200 hover:border-cyan/20 hover:shadow-card transition-all duration-200"
+              >
+                <div className="flex items-center justify-center w-14 h-14 mb-3 text-slate-600 [&>svg]:shrink-0">
+                  {logoSrc ? (
+                    <Image
+                      src={logoSrc}
+                      alt={`${name} logo`}
+                      width={40}
+                      height={40}
+                      className="w-10 h-10 object-contain"
+                      loading="lazy"
+                    />
+                  ) : (
+                    icon
+                  )}
+                </div>
+                <span className="text-slate-700 font-body font-medium text-center text-sm leading-tight">
+                  {name}
+                </span>
               </div>
-              <span className="text-slate-700 font-body font-medium text-center text-sm leading-tight">
-                {name}
-              </span>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
