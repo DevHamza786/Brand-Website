@@ -1,0 +1,10 @@
+{
+  "name": "brand-website/php_website",
+  "description": "PHP brand website with contact form and PHPMailer",
+  "require": {
+    "phpmailer/phpmailer": "^6.9"
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
+}

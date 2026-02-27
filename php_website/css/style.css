@@ -1,0 +1,50 @@
+/* Same as Next.js globals.css + overrides for Tailwind CDN */
+:root {
+  --color-navy: #0F172A;
+  --color-cyan: #06B6D4;
+  --color-cyan-light: #22D3EE;
+  --color-slate-50: #F8FAFC;
+  --color-slate-200: #E2E8F0;
+  --container-content: 1200px;
+  --shadow-card: 0 2px 8px rgba(15, 23, 42, 0.06);
+  --shadow-card-hover: 0 12px 40px rgba(15, 23, 42, 0.12);
+}
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 2px;
+}
+
+::selection { background: rgba(6, 182, 212, 0.2); }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+.h-18 { height: 4.5rem; }
+.max-w-content { max-width: 1200px; }
+.max-w-copy { max-width: 720px; }
+.shadow-dropdown { box-shadow: 0 12px 32px rgba(15, 23, 42, 0.14); }
+.shadow-card { box-shadow: var(--shadow-card); }
+.shadow-card-hover { box-shadow: var(--shadow-card-hover); }
