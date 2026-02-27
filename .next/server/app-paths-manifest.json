@@ -1,7 +1,8 @@
 {
+  "/admin/page": "app/admin/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/thank-you/page": "app/thank-you/page.js",
   "/page": "app/page.js",
-  "/services/mobile-apps/page": "app/services/mobile-apps/page.js",
-  "/services/maintenance/page": "app/services/maintenance/page.js",
-  "/services/ui-ux/page": "app/services/ui-ux/page.js",
-  "/about/page": "app/about/page.js"
+  "/api/admin/leads/route": "app/api/admin/leads/route.js",
+  "/api/admin/settings/route": "app/api/admin/settings/route.js"
 }

@@ -1,0 +1,10 @@
+{
+  "notificationEmail": "hamzabrandsynario@gmail.com",
+  "emailEnabled": true,
+  "smtpHost": "sandbox.smtp.mailtrap.io",
+  "smtpPort": 587,
+  "smtpUser": "f26b3200db9c1c",
+  "smtpPassword": "a19dd3e3f1e3d4",
+  "smtpSecure": false,
+  "fromEmail": "hamzabrandsynario@gmail.com"
+}
