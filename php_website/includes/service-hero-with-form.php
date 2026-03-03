@@ -7,7 +7,7 @@ if (!isset($service_cta_text)) $service_cta_text = 'Get a quote';
   <div class="absolute inset-0 opacity-[0.04]" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 32px 32px;"></div>
   <div class="max-w-content mx-auto px-6 md:px-10 relative z-10">
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-center">
-      <div class="order-2 lg:order-1">
+      <div class="order-1 lg:order-1">
         <nav class="text-sm text-slate-400 mb-6" aria-label="Breadcrumb">
           <ol class="flex flex-wrap gap-2 items-center">
             <?php foreach ($service_breadcrumb as $i => $item) { ?>
@@ -24,7 +24,7 @@ if (!isset($service_cta_text)) $service_cta_text = 'Get a quote';
         <p class="text-xl text-slate-300 leading-relaxed mb-8 max-w-xl"><?php echo htmlspecialchars($service_description); ?></p>
         <a href="<?php echo $base; ?>contact.php" class="inline-flex items-center gap-2 px-6 py-3.5 bg-cyan hover:bg-cyan-light text-navy font-body font-semibold rounded-xl transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-cyan/25"><?php echo htmlspecialchars($service_cta_text); ?> <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
       </div>
-      <div class="order-1 lg:order-2">
+      <div class="order-2 lg:order-2">
         <div class="relative max-w-md mx-auto lg:ml-auto lg:mr-0">
           <div class="relative p-6 md:p-8 rounded-2xl bg-white border border-slate-200 shadow-xl shadow-navy/20">
             <div class="absolute right-0 bottom-0 w-1/2 h-1/2 rounded-tl-[100%] bg-gradient-to-tr from-cyan/10 to-transparent pointer-events-none"></div>

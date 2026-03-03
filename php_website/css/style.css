@@ -48,3 +48,9 @@ html { scroll-behavior: smooth; }
 .shadow-dropdown { box-shadow: 0 12px 32px rgba(15, 23, 42, 0.14); }
 .shadow-card { box-shadow: var(--shadow-card); }
 .shadow-card-hover { box-shadow: var(--shadow-card-hover); }
+
+/* Mobile app portfolio – overlapping phone mockups */
+.mobile-portfolio .mobile-phone-mockup { box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
+@media (max-width: 1023px) {
+  .mobile-portfolio-phones { width: 240px !important; height: 300px !important; }
+}

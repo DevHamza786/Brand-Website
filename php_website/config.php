@@ -11,6 +11,11 @@ if (!defined('ASSETS_PATH')) {
 }
 define('DATA_DIR', __DIR__ . '/data');
 
+define('SITE_PHONE', '0488 845 048');
+define('SITE_PHONE_RAW', '0488845048');
+define('SITE_EMAIL', 'Info@aussieappstudio.com.au');
+define('SITE_ADDRESS', '1/8 Ireland Place, Ranui, Auckland 0612, New Zealand');
+
 function base_url($path = '') {
   $p = rtrim(BASE_PATH, '/');
   $root = ($p === '' ? '/' : $p . '/');

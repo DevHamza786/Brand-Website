@@ -4,6 +4,10 @@ if (!isset($current_page)) $current_page = '';
 require_once __DIR__ . '/../config.php';
 $base = base_url('');
 $assets = asset_url('');
+if (!defined('SITE_PHONE')) define('SITE_PHONE', '0488 845 048');
+if (!defined('SITE_PHONE_RAW')) define('SITE_PHONE_RAW', '0488845048');
+if (!defined('SITE_EMAIL')) define('SITE_EMAIL', 'Info@aussieappstudio.com.au');
+if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', '1/8 Ireland Place, Ranui, Auckland 0612, New Zealand');
 ?>
 <!DOCTYPE html>
 <html lang="en-AU">
@@ -19,8 +23,12 @@ $assets = asset_url('');
 </head>
 <body class="min-h-screen flex flex-col bg-slate-50 font-body text-slate-900 antialiased text-lg leading-relaxed">
 <header class="sticky top-0 z-50 bg-white/98 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
-<div class="max-w-content mx-auto px-6 md:px-10 flex items-center justify-between h-18 md:h-20">
+<div class="max-w-content mx-auto px-6 md:px-10 flex items-center justify-between h-18 md:h-20 gap-3">
 <a href="<?php echo $base; ?>index.php" class="flex items-center gap-2 shrink-0"><img src="<?php echo $assets; ?>logo.png" alt="" class="h-12 md:h-14 w-auto object-contain"></a>
+<div class="md:hidden flex items-center gap-3 shrink-0">
+  <img src="<?php echo $assets; ?>usflag.webp" alt="US" class="w-9 h-6 object-contain flex-shrink-0" width="36" height="24">
+  <a href="tel:<?php echo SITE_PHONE_RAW; ?>" class="font-body font-semibold text-navy text-sm whitespace-nowrap leading-tight"><?php echo htmlspecialchars(SITE_PHONE); ?></a>
+</div>
 <nav class="hidden md:flex items-center gap-8">
 <div class="relative" id="services-nav">
 <button type="button" class="font-body font-medium text-slate-600 hover:text-navy py-2" id="services-toggle">Services</button>

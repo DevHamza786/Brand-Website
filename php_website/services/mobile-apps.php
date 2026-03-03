@@ -46,6 +46,8 @@ require_once __DIR__ . '/../includes/service-hero-with-form.php';
   </div>
 </section>
 
+<?php require_once __DIR__ . '/../includes/mobile-app-portfolio-section.php'; ?>
+
 <section class="py-20 md:py-28 bg-white">
   <div class="max-w-content mx-auto px-6 md:px-10">
     <p class="font-headline font-semibold text-cyan text-sm uppercase tracking-wider mb-2">Why Partner with Us</p>
@@ -84,25 +86,66 @@ require_once __DIR__ . '/../includes/service-hero-with-form.php';
 
 <?php require_once __DIR__ . '/../includes/tech-section.php'; ?>
 
-<section class="py-20 md:py-28 bg-slate-50 overflow-hidden">
+<?php
+$packages_phone = '0488 845 048';
+$packages_base_features = [
+  'Splash Screen Animations',
+  'Unlimited Revisions',
+  'App Logo',
+  'By Award Winning Logo Designers',
+  'Unlimited Revisions',
+  'SPECIAL FEATURES',
+  'Grayscale Format',
+  'Color Options',
+  'All File Formats',
+  'App Icons (Phone/Tablets)',
+  '100% Real Account Manager (No Bots)',
+  '100% Approval Assurance',
+  '100% Ownership Rights',
+  '100% Money Back Guarantee',
+  '100% Custom Designs (No Template)',
+  '24/7 after Sales Support (Email, Chat, Call, SMS, WhatsApp)',
+];
+$packages_tiers = [
+  ['name' => 'Essential Package', 'price' => '$1299.00', 'original' => '$3250.00', 'screenCount' => 15],
+  ['name' => 'Corporate Package', 'price' => '$2499.00', 'original' => '$6250.00', 'screenCount' => 25],
+  ['name' => 'Business Package', 'price' => '$3999.00', 'original' => '$10000.00', 'screenCount' => 35],
+];
+?>
+<section class="py-16 md:py-20 overflow-hidden" style="background-color: #1e1b4b;">
   <div class="max-w-content mx-auto px-6 md:px-10">
-    <div class="text-center max-w-2xl mx-auto mb-14">
-      <h2 class="font-headline font-bold text-3xl md:text-4xl text-navy mb-4">Mobile app pricing</h2>
-      <p class="text-slate-600 text-lg">One codebase for iOS and Android. Fixed scope and timeline. Get a detailed quote in 24 hours.</p>
-    </div>
-    <div class="grid md:grid-cols-3 gap-8">
-      <?php
-      $tiers = [['name'=>'MVP','description'=>'Validate your idea with a minimal viable product.','features'=>['Core features only','iOS + Android (cross-platform)','Basic backend','App store submission','2–4 month timeline'],'priceLabel'=>'From $12,000','highlighted'=>false],['name'=>'Full product','description'=>'Production-ready app with polish and scale.','features'=>['Full feature set','Native feel & performance','API + backend','Analytics & push','4–8 month timeline'],'priceLabel'=>'From $25,000','highlighted'=>true],['name'=>'Ongoing','description'=>'New features, updates, and dedicated support.','features'=>['Sprint-based releases','Bug fixes & updates','New features','App store compliance','Monthly retainer'],'priceLabel'=>'Custom quote','highlighted'=>false]];
-      foreach ($tiers as $tier) { $hl = $tier['highlighted']; ?>
-      <div class="relative h-full rounded-2xl border-2 p-8 transition-all duration-300 hover:shadow-xl <?php echo $hl ? 'border-cyan bg-navy text-white shadow-lg shadow-cyan/20' : 'border-slate-200 bg-white hover:border-cyan/40'; ?>">
-        <?php if ($hl) { ?><div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-cyan text-navy font-body font-semibold text-sm">Most popular</div><?php } ?>
-        <h3 class="font-headline font-bold text-xl mb-2"><?php echo htmlspecialchars($tier['name']); ?></h3>
-        <p class="text-sm mb-6 <?php echo $hl ? 'text-slate-300' : 'text-slate-600'; ?>"><?php echo htmlspecialchars($tier['description']); ?></p>
-        <p class="font-headline font-bold text-2xl mb-6 <?php echo $hl ? 'text-cyan-light' : 'text-navy'; ?>"><?php echo htmlspecialchars($tier['priceLabel']); ?></p>
-        <ul class="space-y-3 mb-8"><?php foreach ($tier['features'] as $f) { ?><li class="flex items-start gap-3"><svg class="w-5 h-5 text-cyan flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="<?php echo $hl ? 'text-slate-200 text-sm' : 'text-slate-700 text-sm'; ?>"><?php echo htmlspecialchars($f); ?></span></li><?php } ?></ul>
-        <a href="<?php echo $base; ?>contact.php" class="inline-flex items-center justify-center gap-2 w-full py-3.5 rounded-xl font-body font-semibold text-sm transition-all duration-200 hover:scale-[1.02] <?php echo $hl ? 'bg-cyan hover:bg-cyan-light text-navy' : 'bg-navy hover:bg-navy-deep text-white'; ?>">Get a quote <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+    <h2 class="font-headline font-bold text-3xl md:text-4xl text-white text-center mb-2">Solutions That Change The World For The Better</h2>
+    <p class="text-slate-300 text-center text-lg max-w-2xl mx-auto mb-12">Design excellence can't really be achieved without working side by side with extraordinary clients from around the world.</p>
+    <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+      <?php foreach ($packages_tiers as $tier): 
+        $features = array_merge([$tier['screenCount'] . ' App Screen Designs'], $packages_base_features);
+      ?>
+      <div class="rounded-2xl p-6 md:p-8 border-2 transition-all duration-300 hover:shadow-xl" style="background-color: #312e81; border-color: rgba(129, 140, 248, 0.5); box-shadow: 0 0 20px rgba(129, 140, 248, 0.15);">
+        <h3 class="font-headline font-bold text-xl text-white mb-4"><?php echo htmlspecialchars($tier['name']); ?></h3>
+        <div class="flex flex-wrap items-baseline gap-2 mb-6">
+          <span class="font-headline font-bold text-2xl text-white"><?php echo htmlspecialchars($tier['price']); ?></span>
+          <span class="text-red-400 line-through text-lg"><?php echo htmlspecialchars($tier['original']); ?></span>
+        </div>
+        <ul class="space-y-2 mb-8">
+          <?php foreach ($features as $f): ?>
+          <li class="flex items-start gap-2 text-white text-sm">
+            <span class="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full" style="background-color: #6366f1;"></span>
+            <span><?php echo htmlspecialchars($f); ?></span>
+          </li>
+          <?php endforeach; ?>
+        </ul>
+        <div class="pt-4 border-t border-indigo-400/30 flex flex-wrap justify-between gap-4 text-sm">
+          <div>
+            <p class="text-slate-300">Share your idea?</p>
+            <a href="tel:0488845048" class="font-semibold text-white hover:text-cyan-300 transition-colors"><?php echo htmlspecialchars($packages_phone); ?></a>
+          </div>
+          <div class="text-right">
+            <p class="text-slate-300">Want to discuss?</p>
+            <a href="<?php echo $base; ?>contact.php" class="font-semibold text-white hover:text-cyan-300 transition-colors">Live Chat Now</a>
+          </div>
+        </div>
       </div>
-      <?php } ?>
+      <?php endforeach; ?>
     </div>
   </div>
 </section>

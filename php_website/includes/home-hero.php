@@ -9,9 +9,9 @@ $heroSlides = [
   <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(6,182,212,0.15),transparent)]"></div>
   <div class="max-w-content mx-auto px-6 md:px-10 py-24 md:py-32 w-full relative z-10">
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-      <div class="order-2 lg:order-1 relative min-h-[320px] md:min-h-[380px]">
+      <div class="order-1 lg:order-1 relative min-h-0 lg:min-h-[380px]">
         <?php foreach ($heroSlides as $i => $s) { ?>
-        <div data-hero-slide class="absolute inset-0 transition-opacity duration-500 <?php echo $i===0?'opacity-100 z-10':'opacity-0 z-0 pointer-events-none'; ?>">
+        <div data-hero-slide class="transition-opacity duration-500 <?php echo $i===0?'opacity-100 z-10':'opacity-0 z-0 pointer-events-none'; ?> <?php echo $i===0 ? 'relative lg:absolute lg:inset-0' : 'absolute inset-0'; ?>">
           <p class="text-cyan-light font-body font-medium text-sm uppercase tracking-wider mb-6"><?php echo htmlspecialchars($s['sub']); ?></p>
           <h1 class="font-headline font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-8"><?php echo htmlspecialchars($s['head']); ?><span class="text-cyan-light"> <?php echo htmlspecialchars($s['highlight']); ?></span></h1>
           <p class="text-lg md:text-xl text-slate-300 max-w-xl mb-10 leading-relaxed"><?php echo htmlspecialchars($s['desc']); ?></p>
@@ -22,7 +22,7 @@ $heroSlides = [
         </div>
         <?php } ?>
       </div>
-      <div class="order-1 lg:order-2">
+      <div class="order-2 lg:order-2">
         <div class="relative max-w-md mx-auto lg:ml-auto p-6 md:p-8 rounded-2xl bg-white border border-slate-200 shadow-xl">
           <h2 class="font-headline font-bold text-xl md:text-2xl text-navy mb-1">Discuss your project</h2>
           <p class="font-headline font-bold text-xl md:text-2xl text-cyan mb-6">needs</p>

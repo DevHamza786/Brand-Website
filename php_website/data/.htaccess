@@ -1,0 +1,4 @@
+# Prevent direct web access to leads and config (Apache)
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>

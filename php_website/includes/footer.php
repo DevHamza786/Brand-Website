@@ -2,6 +2,10 @@
 require_once __DIR__ . '/../config.php';
 $base = base_url('');
 $assets = asset_url('');
+if (!defined('SITE_PHONE')) define('SITE_PHONE', '0488 845 048');
+if (!defined('SITE_PHONE_RAW')) define('SITE_PHONE_RAW', '0488845048');
+if (!defined('SITE_EMAIL')) define('SITE_EMAIL', 'Info@aussieappstudio.com.au');
+if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', '1/8 Ireland Place, Ranui, Auckland 0612, New Zealand');
 ?>
 </main>
 <footer class="bg-navy text-white">
@@ -10,6 +14,7 @@ $assets = asset_url('');
       <div>
         <a href="<?php echo $base; ?>index.php" class="inline-block mb-5"><img src="<?php echo $assets; ?>logo.png" alt="" class="h-10 w-auto object-contain opacity-95"></a>
         <p class="text-slate-300 text-sm leading-relaxed max-w-xs">Digital products that win—in your time zone. Serving Australia, USA & New Zealand.</p>
+        <p class="mt-4 text-slate-400 text-sm"><?php echo htmlspecialchars(SITE_ADDRESS); ?></p>
       </div>
       <div>
         <p class="font-body font-semibold text-white mb-5">Offerings</p>
@@ -34,7 +39,8 @@ $assets = asset_url('');
           <li><a href="<?php echo $base; ?>privacy.php" class="text-slate-300 hover:text-cyan-light text-sm">Privacy Policy</a></li>
           <li><a href="<?php echo $base; ?>terms.php" class="text-slate-300 hover:text-cyan-light text-sm">Terms & Conditions</a></li>
         </ul>
-        <p class="mt-6 text-slate-400 text-sm"><a href="mailto:hello@aussieappstudio.com.au" class="hover:text-cyan-light">hello@aussieappstudio.com.au</a></p>
+        <p class="mt-6 text-slate-400 text-sm"><a href="mailto:<?php echo htmlspecialchars(SITE_EMAIL); ?>" class="hover:text-cyan-light"><?php echo htmlspecialchars(SITE_EMAIL); ?></a></p>
+        <p class="mt-2 text-slate-400 text-sm"><a href="tel:<?php echo SITE_PHONE_RAW; ?>" class="hover:text-cyan-light"><?php echo htmlspecialchars(SITE_PHONE); ?></a></p>
         <a href="<?php echo $base; ?>contact.php" class="inline-block mt-4 px-5 py-2.5 border-2 border-cyan text-cyan rounded-xl font-body font-medium text-sm hover:bg-cyan hover:text-navy">Book a call</a>
       </div>
     </div>

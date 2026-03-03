@@ -17,8 +17,8 @@ $base = base_url('');
       <h2 class="font-headline font-semibold text-lg text-ocean mt-8 mb-2">3. How we use your data</h2>
       <p class="text-slate-700 leading-relaxed mb-4">We use your data to respond to enquiries, send requested information, improve our website, and comply with legal obligations. We do not sell your personal data.</p>
       <h2 class="font-headline font-semibold text-lg text-ocean mt-8 mb-2">4. Your rights</h2>
-      <p class="text-slate-700 leading-relaxed mb-4">Depending on your location, you may have rights to access, correct, delete, or restrict use of your data. Contact us at hello@aussieappstudio.com.au.</p>
-      <p class="text-slate-700 leading-relaxed mt-8"><strong>Contact:</strong> For privacy requests, email hello@aussieappstudio.com.au.</p>
+      <p class="text-slate-700 leading-relaxed mb-4">Depending on your location, you may have rights to access, correct, delete, or restrict use of your data. Contact us at Info@aussieappstudio.com.au.</p>
+      <p class="text-slate-700 leading-relaxed mt-8"><strong>Contact:</strong> For privacy requests, email Info@aussieappstudio.com.au.</p>
     </div>
     <p class="mt-12"><a href="<?php echo $base; ?>index.php" class="text-cyan hover:text-cyan-dark font-medium">← Back to home</a></p>
   </div>
