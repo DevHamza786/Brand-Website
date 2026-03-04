@@ -6,7 +6,7 @@ $base = base_url('');
 if (!defined('SITE_PHONE')) define('SITE_PHONE', '0488 845 048');
 if (!defined('SITE_PHONE_RAW')) define('SITE_PHONE_RAW', '0488845048');
 if (!defined('SITE_EMAIL')) define('SITE_EMAIL', 'Info@aussieappstudio.com.au');
-if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', '1/8 Ireland Place, Ranui, Auckland 0612, New Zealand');
+if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', 'Victoria, Melbourne, Australia');
 ?>
 <section id="form" class="pt-24 md:pt-28 pb-20 md:pb-28 scroll-mt-24 bg-navy">
   <div class="max-w-content mx-auto px-6 md:px-10">

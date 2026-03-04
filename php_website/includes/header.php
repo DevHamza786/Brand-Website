@@ -7,7 +7,7 @@ $assets = asset_url('');
 if (!defined('SITE_PHONE')) define('SITE_PHONE', '0488 845 048');
 if (!defined('SITE_PHONE_RAW')) define('SITE_PHONE_RAW', '0488845048');
 if (!defined('SITE_EMAIL')) define('SITE_EMAIL', 'Info@aussieappstudio.com.au');
-if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', '1/8 Ireland Place, Ranui, Auckland 0612, New Zealand');
+if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', 'Victoria, Melbourne, Australia');
 ?>
 <!DOCTYPE html>
 <html lang="en-AU">
@@ -26,7 +26,7 @@ if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', '1/8 Ireland Place, Ranui, 
 <div class="max-w-content mx-auto px-6 md:px-10 flex items-center justify-between h-18 md:h-20 gap-3">
 <a href="<?php echo $base; ?>index.php" class="flex items-center gap-2 shrink-0"><img src="<?php echo $assets; ?>logo.png" alt="" class="h-12 md:h-14 w-auto object-contain"></a>
 <div class="md:hidden flex items-center gap-3 shrink-0">
-  <img src="<?php echo $assets; ?>usflag.webp" alt="US" class="w-9 h-6 object-contain flex-shrink-0" width="36" height="24">
+  <img src="<?php echo $assets; ?>new-usflag.webp" alt="US" class="w-9 h-6 object-contain flex-shrink-0" width="36" height="24">
   <a href="tel:<?php echo SITE_PHONE_RAW; ?>" class="font-body font-semibold text-navy text-sm whitespace-nowrap leading-tight"><?php echo htmlspecialchars(SITE_PHONE); ?></a>
 </div>
 <nav class="hidden md:flex items-center gap-8">

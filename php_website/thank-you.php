@@ -9,7 +9,7 @@ $base = base_url('');
     <div class="w-16 h-16 rounded-full bg-cyan/20 flex items-center justify-center mx-auto mb-8">
       <svg class="w-8 h-8 text-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
     </div>
-    <h1 class="font-headline font-bold text-3xl md:text-4xl text-navy mb-6">Thanks—we've got it.</h1>
+    <h1 class="font-headline font-bold text-3xl md:text-4xl text-navy mb-6">Thanks, we've got it.</h1>
     <p class="text-slate-600 text-lg mb-10 leading-relaxed">We'll be in touch within 24 hours. In the meantime, take a look at our work or add us on LinkedIn.</p>
     <div class="flex flex-wrap justify-center gap-4">
       <a href="<?php echo $base; ?>work.php" class="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-navy text-navy font-body font-semibold rounded-xl hover:bg-navy hover:text-white">See our work</a>

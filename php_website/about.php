@@ -65,7 +65,7 @@ $assets = asset_url('');
       <div>
         <p class="text-[11px] font-body font-semibold tracking-[0.3em] uppercase text-cyan-light mb-3">What we do</p>
         <h2 class="font-headline font-bold text-3xl md:text-4xl mb-4">One team for strategy, design and build</h2>
-        <p class="text-slate-300 max-w-2xl mb-6">We plug in where you need us most—whether that's upfront discovery, UI/UX, full stack delivery or ongoing optimisation. Every lane connects back to a single roadmap.</p>
+        <p class="text-slate-300 max-w-2xl mb-6">We plug in where you need us most, whether that's upfront discovery, UI/UX, full stack delivery or ongoing optimisation. Every lane connects back to a single roadmap.</p>
         <p class="text-slate-400 text-sm md:text-base max-w-xl">Pick a lane below to jump into the relevant service page and see how we work in more detail.</p>
       </div>
       <div class="relative">

@@ -1,7 +1,7 @@
 <?php
 $heroSlides = [
   ['sub'=>'WEB & MOBILE APP DEVELOPMENT FOR AUSTRALIA, USA & NZ','head'=>'Digital products that win, ','highlight'=>'in your time zone.','desc'=>'We build high-performance web and mobile apps for ambitious brands in Australia, the USA, and New Zealand. Custom web development, mobile app development, UI/UX design, and ongoing support. Strategy to launch, in sync with your local hours.'],
-  ['sub'=>'CUSTOM SOFTWARE & UI/UX','head'=>'From idea to launch, ','highlight'=>'faster.','desc'=>'Discovery, design, and development in one place. We help you validate, prototype, and ship products that users love—with clear timelines and transparent pricing.'],
+  ['sub'=>'CUSTOM SOFTWARE & UI/UX','head'=>'From idea to launch, ','highlight'=>'faster.','desc'=>'Discovery, design, and development in one place. We help you validate, prototype, and ship products that users love, with clear timelines and transparent pricing.'],
   ['sub'=>'TRUSTED BY BRANDS IN AU, USA & NZ','head'=>'Local partnership, ','highlight'=>'global capability.','desc'=>'An Australian-owned studio with the technical firepower to compete anywhere. Get the reliability of a local partner and the scale of a global team.']
 ];
 ?>

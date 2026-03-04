@@ -43,7 +43,7 @@ $webProjects = [
       <div>
         <p class="text-xs font-body font-semibold tracking-[0.28em] uppercase text-cyan-light mb-3">Portfolio</p>
         <h2 class="font-headline font-bold text-3xl md:text-4xl text-white mb-4">Web & mobile product experiences in the wild</h2>
-        <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-6">Instead of static thumbnails, here's a closer look at real interface work we've shipped for brands across Australia, New Zealand and the US—from browser-based platforms to app‑store ready screens.</p>
+        <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-6">Instead of static thumbnails, here's a closer look at real interface work we've shipped for brands across Australia, New Zealand and the US, from browser-based platforms to app‑store ready screens.</p>
         <p class="text-slate-400 text-sm leading-relaxed">We're opinionated about clarity, hierarchy and performance. Every screen here is designed to feel fast, legible and conversion‑focused on the devices your customers actually use.</p>
       </div>
       <div class="relative">
@@ -91,7 +91,7 @@ $webProjects = [
       <div class="max-w-xl">
         <p class="text-xs font-body font-semibold tracking-[0.28em] uppercase text-cyan-light mb-3">Mobile apps</p>
         <h2 class="font-headline font-bold text-3xl md:text-4xl text-white mb-4">Mobile app interfaces and flows</h2>
-        <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-6">Left side you can see a rotating view of real mobile UI work—from onboarding to core flows—designed to feel fast and native on both Android and iOS. On the right, we break down how we approach mobile product design and development.</p>
+        <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-6">Left side you can see a rotating view of real mobile UI work, from onboarding to core flows, designed to feel fast and native on both Android and iOS. On the right, we break down how we approach mobile product design and development.</p>
         <div class="flex items-center gap-2">
           <?php for ($i = 0; $i < count($mobileProjects); $i++) { ?><button type="button" data-mobile-dot class="h-2.5 rounded-full transition-all duration-200 <?php echo $i === 0 ? 'w-7 bg-cyan' : 'w-2.5 bg-slate-600'; ?>"></button><?php } ?>
         </div>
@@ -136,7 +136,7 @@ $webProjects = [
       <div class="max-w-4xl mx-auto rounded-3xl border border-slate-700/70 bg-slate-900/80 backdrop-blur-xl p-10 md:p-14 shadow-[0_32px_100px_rgba(15,23,42,0.95)] relative z-10">
         <p class="text-xs font-body font-semibold tracking-[0.28em] uppercase text-cyan-light mb-4 text-center">Next project</p>
         <h2 class="font-headline font-bold text-3xl md:text-4xl text-white text-center mb-5">Want your product to be the next project on this page?</h2>
-        <p class="text-slate-300 text-base md:text-lg leading-relaxed text-center mb-8">We're currently turning these snapshots into full case studies. Share a bit about what you're building and we'll walk you through exactly how we'd approach it—plus examples that match your industry and stage.</p>
+        <p class="text-slate-300 text-base md:text-lg leading-relaxed text-center mb-8">We're currently turning these snapshots into full case studies. Share a bit about what you're building and we'll walk you through exactly how we'd approach it, plus examples that match your industry and stage.</p>
         <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-8">
           <div class="flex items-center gap-3 text-slate-300 text-sm">
             <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-cyan/15 text-cyan">✓</span>

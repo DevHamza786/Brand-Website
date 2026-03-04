@@ -5,7 +5,7 @@ $assets = asset_url('');
 if (!defined('SITE_PHONE')) define('SITE_PHONE', '0488 845 048');
 if (!defined('SITE_PHONE_RAW')) define('SITE_PHONE_RAW', '0488845048');
 if (!defined('SITE_EMAIL')) define('SITE_EMAIL', 'Info@aussieappstudio.com.au');
-if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', '1/8 Ireland Place, Ranui, Auckland 0612, New Zealand');
+if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', 'Victoria, Melbourne, Australia');
 ?>
 </main>
 <footer class="bg-navy text-white">
@@ -13,7 +13,7 @@ if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', '1/8 Ireland Place, Ranui, 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
       <div>
         <a href="<?php echo $base; ?>index.php" class="inline-block mb-5"><img src="<?php echo $assets; ?>logo.png" alt="" class="h-10 w-auto object-contain opacity-95"></a>
-        <p class="text-slate-300 text-sm leading-relaxed max-w-xs">Digital products that win—in your time zone. Serving Australia, USA & New Zealand.</p>
+        <p class="text-slate-300 text-sm leading-relaxed max-w-xs">Digital products that win in your time zone. Serving Australia, USA & New Zealand.</p>
         <p class="mt-4 text-slate-400 text-sm"><?php echo htmlspecialchars(SITE_ADDRESS); ?></p>
       </div>
       <div>
@@ -52,5 +52,20 @@ if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', '1/8 Ireland Place, Ranui, 
 </footer>
 <script src="<?php echo $base; ?>js/header.js"></script>
 <?php if (!empty($footer_scripts)) echo $footer_scripts; ?>
+<?php if (!isset($current_page) || $current_page !== 'content') : ?>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/69a77899e640941c37d75feb/1jir2u66i';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+<?php endif; ?>
 </body>
 </html>
