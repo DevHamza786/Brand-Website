@@ -4,6 +4,7 @@ $base = base_url('');
 $assets = asset_url('');
 if (!defined('SITE_PHONE')) define('SITE_PHONE', '0488 845 048');
 if (!defined('SITE_PHONE_RAW')) define('SITE_PHONE_RAW', '0488845048');
+if (!defined('SITE_ABN')) define('SITE_ABN', '31 683 720 943');
 if (!defined('SITE_EMAIL')) define('SITE_EMAIL', 'Info@aussieappstudio.com.au');
 if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', 'Victoria, Melbourne, Australia');
 ?>
@@ -40,7 +41,7 @@ if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', 'Victoria, Melbourne, Austr
           <li><a href="<?php echo $base; ?>terms.php" class="text-slate-300 hover:text-cyan-light text-sm">Terms & Conditions</a></li>
         </ul>
         <p class="mt-6 text-slate-400 text-sm"><a href="mailto:<?php echo htmlspecialchars(SITE_EMAIL); ?>" class="hover:text-cyan-light"><?php echo htmlspecialchars(SITE_EMAIL); ?></a></p>
-        <p class="mt-2 text-slate-400 text-sm"><a href="tel:<?php echo SITE_PHONE_RAW; ?>" class="hover:text-cyan-light"><?php echo htmlspecialchars(SITE_PHONE); ?></a></p>
+        <p class="mt-2 text-slate-400 text-sm"><a href="tel:<?php echo SITE_PHONE_RAW; ?>" class="hover:text-cyan-light block"><?php echo htmlspecialchars(SITE_PHONE); ?></a><span class="block text-slate-500 text-xs mt-0.5">ABN <?php echo htmlspecialchars(SITE_ABN); ?></span></p>
         <a href="<?php echo $base; ?>contact.php" class="inline-block mt-4 px-5 py-2.5 border-2 border-cyan text-cyan rounded-xl font-body font-medium text-sm hover:bg-cyan hover:text-navy">Book a call</a>
       </div>
     </div>

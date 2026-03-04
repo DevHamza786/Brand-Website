@@ -13,6 +13,7 @@ define('DATA_DIR', __DIR__ . '/data');
 
 define('SITE_PHONE', '0488 845 048');
 define('SITE_PHONE_RAW', '0488845048');
+define('SITE_ABN', '31 683 720 943');
 define('SITE_EMAIL', 'Info@aussieappstudio.com.au');
 define('SITE_ADDRESS', 'Victoria, Melbourne, Australia');
 

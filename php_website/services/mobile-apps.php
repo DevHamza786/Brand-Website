@@ -87,7 +87,8 @@ require_once __DIR__ . '/../includes/service-hero-with-form.php';
 <?php require_once __DIR__ . '/../includes/tech-section.php'; ?>
 
 <?php
-$packages_phone = '0488 845 048';
+$packages_phone = defined('SITE_PHONE') ? SITE_PHONE : '0488 845 048';
+$packages_abn = defined('SITE_ABN') ? SITE_ABN : '31 683 720 943';
 $packages_base_features = [
   'Splash Screen Animations',
   'Unlimited Revisions',
@@ -137,7 +138,8 @@ $packages_tiers = [
         <div class="pt-4 border-t border-indigo-400/30 flex flex-wrap justify-between gap-4 text-sm">
           <div>
             <p class="text-slate-300">Share your idea?</p>
-            <a href="tel:0488845048" class="font-semibold text-white hover:text-cyan-300 transition-colors"><?php echo htmlspecialchars($packages_phone); ?></a>
+            <a href="tel:<?php echo defined('SITE_PHONE_RAW') ? SITE_PHONE_RAW : '0488845048'; ?>" class="font-semibold text-white hover:text-cyan-300 transition-colors block"><?php echo htmlspecialchars($packages_phone); ?></a>
+            <span class="text-slate-400 text-xs block mt-0.5">ABN <?php echo htmlspecialchars($packages_abn); ?></span>
           </div>
           <div class="text-right">
             <p class="text-slate-300">Want to discuss?</p>
