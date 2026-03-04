@@ -1,13 +1,13 @@
 <?php
 $heroSlides = [
-  ['sub'=>'WEB & MOBILE APP DEVELOPMENT FOR AUSTRALIA, USA & NZ','head'=>'Digital products that win, ','highlight'=>'in your time zone.','desc'=>'We build high-performance web and mobile apps for ambitious brands in Australia, the USA, and New Zealand. Custom web development, mobile app development, UI/UX design, and ongoing support. Strategy to launch, in sync with your local hours.'],
+  ['sub'=>'WEB & MOBILE APP DEVELOPMENT FOR AUSTRALIA & NZ','head'=>'Digital products that win, ','highlight'=>'in your time zone.','desc'=>'We build high-performance web and mobile apps for ambitious brands in Australia and New Zealand. Custom web development, mobile app development, UI/UX design, and ongoing support. Strategy to launch, in sync with your local hours.'],
   ['sub'=>'CUSTOM SOFTWARE & UI/UX','head'=>'From idea to launch, ','highlight'=>'faster.','desc'=>'Discovery, design, and development in one place. We help you validate, prototype, and ship products that users love, with clear timelines and transparent pricing.'],
-  ['sub'=>'TRUSTED BY BRANDS IN AU, USA & NZ','head'=>'Local partnership, ','highlight'=>'global capability.','desc'=>'An Australian-owned studio with the technical firepower to compete anywhere. Get the reliability of a local partner and the scale of a global team.']
+  ['sub'=>'TRUSTED BY BRANDS IN AU & NZ','head'=>'Local partnership, ','highlight'=>'global capability.','desc'=>'An Australian-owned studio with the technical firepower to compete anywhere. Get the reliability of a local partner and the scale of a global team.']
 ];
 ?>
 <section class="relative min-h-[92vh] flex items-center overflow-hidden bg-gradient-to-br from-navy via-navy-deep to-navy-light text-white">
   <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(6,182,212,0.15),transparent)]"></div>
-  <div class="max-w-content mx-auto px-6 md:px-10 py-24 md:py-32 w-full relative z-10">
+  <div class="max-w-content mx-auto px-6 md:px-10 py-10 md:py-32 w-full relative z-10">
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
       <div class="order-1 lg:order-1 relative min-h-0 lg:min-h-[380px]">
         <?php foreach ($heroSlides as $i => $s) { ?>

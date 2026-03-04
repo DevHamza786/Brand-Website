@@ -10,7 +10,7 @@ $assets = asset_url('');
     <nav class="text-sm text-slate-400 mb-6"><a href="<?php echo $base; ?>index.php" class="hover:text-cyan-light">Home</a> / <span class="text-white font-medium">Services</span></nav>
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
       <div>
-        <p class="text-cyan-light font-body font-medium text-sm uppercase tracking-wider mb-4">Full stack development for Australia, USA & NZ</p>
+        <p class="text-cyan-light font-body font-medium text-sm uppercase tracking-wider mb-4">Full stack development for Australia & NZ</p>
         <h1 class="font-headline font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">Web & mobile app <span class="text-cyan-light">development services</span></h1>
         <p class="text-xl text-slate-300 leading-relaxed mb-8 max-w-xl">From strategy and UI/UX design to full stack development and ongoing support. We build software that converts and scales for Australian businesses and beyond. Get a quote or discuss your project in the form.</p>
         <a href="<?php echo $base; ?>contact.php" class="inline-flex items-center gap-2 px-6 py-3.5 bg-cyan hover:bg-cyan-light text-navy font-body font-semibold rounded-xl">Get a quote</a>

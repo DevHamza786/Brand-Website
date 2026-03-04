@@ -12,7 +12,7 @@ $assets = asset_url('');
     <div class="grid lg:grid-cols-2 gap-16 items-center">
       <div>
         <h1 class="font-headline font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-8">Australian Web and Mobile App Development Agency: Local Trust, Global Standards</h1>
-        <p class="text-xl text-slate-300 leading-relaxed mb-8">We are a digital product agency that bridges Australian innovation with world class engineering. Web development, mobile app development, and UI/UX design for ambitious brands in Australia, the USA, and New Zealand.</p>
+        <p class="text-xl text-slate-300 leading-relaxed mb-8">We are a digital product agency that bridges Australian innovation with world class engineering. Web development, mobile app development, and UI/UX design for ambitious brands in Australia and New Zealand.</p>
         <p class="text-slate-300 leading-relaxed">Aussie App Studio exists because great ideas deserve great execution. We specialise in web and mobile app development for brands that want a partner who thinks in time zones, scales with growth, and designs for conversion.</p>
       </div>
       <div class="relative">
@@ -28,7 +28,7 @@ $assets = asset_url('');
     <h2 class="font-headline font-bold text-3xl md:text-4xl text-navy mb-10">Our story</h2>
     <div class="grid lg:grid-cols-[1.2fr_1fr] gap-10 lg:gap-16 items-start">
       <div class="max-w-copy space-y-8">
-        <p class="text-slate-700 leading-relaxed text-lg">Our team brings together strategy, UI/UX design, and full-stack development so you get one team from first sketch to launch and beyond. We work with clients across Australia, the USA, and New Zealand. Aligned to your hours, not the other way around.</p>
+        <p class="text-slate-700 leading-relaxed text-lg">Our team brings together strategy, UI/UX design, and full-stack development so you get one team from first sketch to launch and beyond. We work with clients across Australia and New Zealand. Aligned to your hours, not the other way around.</p>
         <p class="text-slate-700 leading-relaxed text-lg">Whether you're scaling an existing product or launching something new, we're built to deliver agile, secure, and user-centric platforms that drive real business outcomes. We don't do black-box outsourcing; we work as an extension of your team with clear ownership and communication.</p>
         <p class="text-slate-700 leading-relaxed text-lg">From discovery and wireframes to production and support, we cover the full product lifecycle. That means fewer handoffs, fewer surprises, and a single team that cares about your success as much as you do.</p>
       </div>

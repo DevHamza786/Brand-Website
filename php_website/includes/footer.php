@@ -14,7 +14,7 @@ if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', 'Victoria, Melbourne, Austr
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
       <div>
         <a href="<?php echo $base; ?>index.php" class="inline-block mb-5"><img src="<?php echo $assets; ?>logo.png" alt="" class="h-10 w-auto object-contain opacity-95"></a>
-        <p class="text-slate-300 text-sm leading-relaxed max-w-xs">Digital products that win in your time zone. Serving Australia, USA & New Zealand.</p>
+        <p class="text-slate-300 text-sm leading-relaxed max-w-xs">Digital products that win in your time zone. Serving Australia & New Zealand.</p>
         <p class="mt-4 text-slate-400 text-sm"><?php echo htmlspecialchars(SITE_ADDRESS); ?></p>
       </div>
       <div>
