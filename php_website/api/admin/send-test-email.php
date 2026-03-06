@@ -34,9 +34,9 @@ require_once $autoload;
 require_once __DIR__ . '/../../includes/email-template.php';
 
 $htmlBody = get_email_template_html('test', [
-  'message' => 'This is a test email from your Aussie App Studio admin panel. If you received this, SMTP is configured correctly and new lead notifications will use the same beautiful template.',
+  'message' => 'This is a test email from your Kiwi Apps Studio admin panel. If you received this, SMTP is configured correctly and new lead notifications will use the same beautiful template.',
 ]);
-$plainText = "This is a test email from your Aussie App Studio admin panel.\n\nIf you received this, SMTP is configured correctly and new lead notifications will be sent to this address.";
+$plainText = "This is a test email from your Kiwi Apps Studio admin panel.\n\nIf you received this, SMTP is configured correctly and new lead notifications will be sent to this address.";
 
 try {
   $mail = new \PHPMailer\PHPMailer\PHPMailer(true);
@@ -56,7 +56,7 @@ try {
   // Avoid "certificate verify failed" on Windows/localhost (e.g. Mailtrap)
   $mail->SMTPOptions = ['ssl' => ['verify_peer' => false, 'verify_peer_name' => false]];
   $mail->CharSet = \PHPMailer\PHPMailer\PHPMailer::CHARSET_UTF8;
-  $mail->setFrom($config['fromEmail'], 'Aussie App Studio');
+  $mail->setFrom($config['fromEmail'], 'Kiwi Apps Studio');
   $mail->addAddress($config['notificationEmail']);
   $mail->Subject = 'Test email – SMTP is working';
   $mail->Body = $htmlBody;

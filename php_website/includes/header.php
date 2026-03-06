@@ -1,17 +1,17 @@
 <?php
-if (!isset($page_title)) $page_title = 'Aussie App Studio';
+if (!isset($page_title)) $page_title = defined('SITE_NAME') ? SITE_NAME : 'Kiwi Apps Studio';
 if (!isset($current_page)) $current_page = '';
 require_once __DIR__ . '/../config.php';
 $base = base_url('');
 $assets = asset_url('');
-if (!defined('SITE_PHONE')) define('SITE_PHONE', '0488 845 048');
-if (!defined('SITE_PHONE_RAW')) define('SITE_PHONE_RAW', '0488845048');
-if (!defined('SITE_ABN')) define('SITE_ABN', '31 683 720 943');
-if (!defined('SITE_EMAIL')) define('SITE_EMAIL', 'Info@aussieappstudio.com.au');
-if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', 'Victoria, Melbourne, Australia');
+if (!defined('SITE_PHONE')) define('SITE_PHONE', '03 965 9343');
+if (!defined('SITE_PHONE_RAW')) define('SITE_PHONE_RAW', '039659343');
+if (!defined('SITE_NZBN')) define('SITE_NZBN', '9429052012983');
+if (!defined('SITE_EMAIL')) define('SITE_EMAIL', 'info@kiwiappstudio.co.nz');
+if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', '1/8 Ireland Place, Ranui, Auckland 0612, New Zealand');
 ?>
 <!DOCTYPE html>
-<html lang="en-AU">
+<html lang="en-NZ">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,10 +27,9 @@ if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', 'Victoria, Melbourne, Austr
 <div class="max-w-content mx-auto px-6 md:px-10 flex items-center justify-between h-18 md:h-20 gap-3">
 <a href="<?php echo $base; ?>index.php" class="flex items-center gap-2 shrink-0"><img src="<?php echo $assets; ?>logo.png" alt="" class="h-12 md:h-14 w-auto object-contain"></a>
 <div class="md:hidden flex items-center gap-3 shrink-0 text-right">
-  <img src="<?php echo $assets; ?>new-usflag.webp" alt="US" class="w-9 h-6 object-contain flex-shrink-0" width="36" height="24">
   <div>
     <a href="tel:<?php echo SITE_PHONE_RAW; ?>" class="font-body font-semibold text-navy text-sm whitespace-nowrap leading-tight block"><?php echo htmlspecialchars(SITE_PHONE); ?></a>
-    <span class="text-navy text-xs block font-semibold">ABN <?php echo htmlspecialchars(defined('SITE_ABN') ? SITE_ABN : '31 683 720 943'); ?></span>
+    <span class="text-navy text-xs block font-semibold">NZBN <?php echo htmlspecialchars(defined('SITE_NZBN') ? SITE_NZBN : '9429052012983'); ?></span>
   </div>
 </div>
 <nav class="hidden md:flex items-center gap-8">

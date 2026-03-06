@@ -1,5 +1,5 @@
 <?php
-$page_title = 'About Us | Aussie App Studio';
+$page_title = 'About Us | Kiwi Apps Studio';
 $current_page = 'about';
 require_once __DIR__ . '/includes/header.php';
 $base = base_url('');
@@ -11,13 +11,13 @@ $assets = asset_url('');
     <nav class="text-sm text-slate-400 mb-10" aria-label="Breadcrumb"><a href="<?php echo $base; ?>index.php" class="hover:text-cyan-light">Home</a> / <span class="text-white font-medium">About</span></nav>
     <div class="grid lg:grid-cols-2 gap-16 items-center">
       <div>
-        <h1 class="font-headline font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-8">Australian Web and Mobile App Development Agency: Local Trust, Global Standards</h1>
-        <p class="text-xl text-slate-300 leading-relaxed mb-8">We are a digital product agency that bridges Australian innovation with world class engineering. Web development, mobile app development, and UI/UX design for ambitious brands in Australia, the USA, and New Zealand.</p>
-        <p class="text-slate-300 leading-relaxed">Aussie App Studio exists because great ideas deserve great execution. We specialise in web and mobile app development for brands that want a partner who thinks in time zones, scales with growth, and designs for conversion.</p>
+        <h1 class="font-headline font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-8">New Zealand Web and Mobile App Development: Local Trust, Global Standards</h1>
+        <p class="text-xl text-slate-300 leading-relaxed mb-8">We are a digital product agency that bridges Kiwi innovation with world class engineering. Web development, mobile app development, and UI/UX design for ambitious brands in New Zealand.</p>
+        <p class="text-slate-300 leading-relaxed">Kiwi Apps Studio exists because great ideas deserve great execution. We specialise in web and mobile app development for brands that want a partner who thinks in time zones, scales with growth, and designs for conversion.</p>
       </div>
       <div class="relative">
         <div class="aspect-[4/3] rounded-2xl bg-navy-light/80 border border-cyan/20 overflow-hidden">
-          <img src="<?php echo $assets; ?>About/Generated Image February 27, 2026 - 3_21PM.png" alt="Aussie App Studio team collaborating in a bright product design workspace." class="w-full h-full object-cover">
+          <img src="<?php echo $assets; ?>About/Generated Image February 27, 2026 - 3_21PM.png" alt="Kiwi Apps Studio team collaborating in a bright product design workspace." class="w-full h-full object-cover">
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@ $assets = asset_url('');
     <h2 class="font-headline font-bold text-3xl md:text-4xl text-navy mb-10">Our story</h2>
     <div class="grid lg:grid-cols-[1.2fr_1fr] gap-10 lg:gap-16 items-start">
       <div class="max-w-copy space-y-8">
-        <p class="text-slate-700 leading-relaxed text-lg">Our team brings together strategy, UI/UX design, and full-stack development so you get one team from first sketch to launch and beyond. We work with clients across Australia, the USA, and New Zealand. Aligned to your hours, not the other way around.</p>
+        <p class="text-slate-700 leading-relaxed text-lg">Our team brings together strategy, UI/UX design, and full-stack development so you get one team from first sketch to launch and beyond. We work with clients across New Zealand. Aligned to your hours, not the other way around.</p>
         <p class="text-slate-700 leading-relaxed text-lg">Whether you're scaling an existing product or launching something new, we're built to deliver agile, secure, and user-centric platforms that drive real business outcomes. We don't do black-box outsourcing; we work as an extension of your team with clear ownership and communication.</p>
         <p class="text-slate-700 leading-relaxed text-lg">From discovery and wireframes to production and support, we cover the full product lifecycle. That means fewer handoffs, fewer surprises, and a single team that cares about your success as much as you do.</p>
       </div>
@@ -37,7 +37,7 @@ $assets = asset_url('');
         <div class="pointer-events-none absolute -left-10 -bottom-10 h-32 w-32 rounded-full bg-navy/5 blur-3xl"></div>
         <div class="relative rounded-3xl overflow-hidden border border-slate-200 shadow-[0_20px_50px_rgba(15,23,42,0.1)]">
           <div class="relative w-full pt-[70%] bg-slate-100">
-            <img src="<?php echo $assets; ?>About/Generated Image February 27, 2026 - 3_22PM.png" alt="Behind-the-scenes look at Aussie App Studio planning user flows and architecture." class="absolute inset-0 w-full h-full object-cover">
+            <img src="<?php echo $assets; ?>About/Generated Image February 27, 2026 - 3_22PM.png" alt="Behind-the-scenes look at Kiwi Apps Studio planning user flows and architecture." class="absolute inset-0 w-full h-full object-cover">
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@
 <section id="difference" class="py-24 md:py-32 bg-slate-50">
   <div class="max-w-content mx-auto px-6 md:px-10">
     <div class="max-w-2xl mb-20">
-      <h2 class="font-headline font-bold text-3xl md:text-4xl text-navy mb-6">The Aussie App Studio difference</h2>
+      <h2 class="font-headline font-bold text-3xl md:text-4xl text-navy mb-6">The Kiwi Apps Studio difference</h2>
       <p class="text-lg text-slate-600 leading-relaxed">We don't just deliver code. We deliver agile, secure, and user-centric platforms designed to compete on the world stage. Here's what sets us apart.</p>
     </div>
     <div class="grid md:grid-cols-2 gap-8 lg:gap-10">
@@ -13,7 +13,7 @@
         ['Time-zone aligned','Seamless communication in your business hours, whether you\'re in Sydney, New York, or Auckland. No more waiting for replies across continents. We sync our availability to yours.','<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>'],
         ['Scalable architecture','Web and mobile apps built with modern stacks (React, Flutter, Node.js) so they grow with your users. We design for scale from day one. No painful rewrites later.','<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>'],
         ['Conversion-first','Every line of code is written with your ROI in mind. Your product isn\'t just polished; it\'s a lead-generating machine. We combine UX best practices with measurable outcomes.','<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>'],
-        ['Local trust, global reach','An Australian-owned studio with the technical firepower to launch in the world\'s most competitive markets. You get the reliability of a local partner and the capability of a global team.','<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0h.5a2.5 2.5 0 002.5-2.5V3.935M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>']
+        ['Local trust, global reach','A New Zealand-owned studio with the technical firepower to launch in the world\'s most competitive markets. You get the reliability of a local partner and the capability of a global team.','<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0h.5a2.5 2.5 0 002.5-2.5V3.935M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>']
       ];
       foreach ($pillars as $p) { ?>
       <div class="group p-8 md:p-10 rounded-3xl bg-white border border-slate-200 shadow-card hover:shadow-xl hover:shadow-cyan/5 hover:-translate-y-1 hover:border-cyan/20 transition-all duration-300">
@@ -180,12 +180,12 @@ $techLogos = ['Node.js'=>'nodejs.png','Express'=>'expressjs.png','Django'=>'djon
   <div class="max-w-content mx-auto px-6 md:px-10">
     <div class="text-center max-w-2xl mx-auto mb-16">
       <h2 class="font-headline font-bold text-3xl md:text-4xl text-navy mb-6">What our clients say</h2>
-      <p class="text-slate-600">Real feedback from teams we've worked with across Australia and New Zealand.</p>
+      <p class="text-slate-600">Real feedback from teams we've worked with across New Zealand.</p>
     </div>
     <div class="relative max-w-3xl mx-auto">
       <div class="overflow-hidden">
         <div class="flex transition-transform duration-500 ease-out" data-testimonial-track>
-          <?php foreach ([['They delivered on time and on budget. The app is fast, looks great, and our users love it.','Sarah M.','Product Lead, Sydney'],['Finally a dev team that gets time zones. We\'re in Auckland and they made collaboration feel local.','James K.','CTO, Auckland'],['From strategy to launch, they were transparent and professional.','Rachel T.','Marketing Director, Melbourne']] as $t) { ?>
+          <?php foreach ([['They delivered on time and on budget. The app is fast, looks great, and our users love it.','Sarah M.','Product Lead, Auckland'],['Finally a dev team that gets time zones. We\'re in Wellington and they made collaboration feel local.','James K.','CTO, Wellington'],['From strategy to launch, they were transparent and professional.','Rachel T.','Marketing Director, Christchurch']] as $t) { ?>
           <div data-testimonial-slide class="w-full flex-shrink-0 px-1">
             <div class="p-8 md:p-10 rounded-2xl bg-white border border-slate-200 shadow-card">
               <p class="text-slate-700 leading-relaxed mb-6">"<?php echo htmlspecialchars($t[0]); ?>"</p>
@@ -225,7 +225,7 @@ $techLogos = ['Node.js'=>'nodejs.png','Express'=>'expressjs.png','Django'=>'djon
       <div class="max-w-xl">
         <p class="text-xs font-body font-semibold tracking-[0.28em] uppercase text-cyan-light mb-3">Recent work</p>
         <h2 class="font-headline font-bold text-3xl md:text-4xl text-white mb-4">Web & mobile product experiences</h2>
-        <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-6">A rotating look at the kind of web and mobile interfaces we design and build for brands in Australia, New Zealand and the US.</p>
+        <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-6">A rotating look at the kind of web and mobile interfaces we design and build for brands in New Zealand.</p>
         <div class="flex items-center gap-2"><?php foreach ($workItems as $wi => $w) { ?><button type="button" data-work-dot data-work-item class="h-2.5 rounded-full transition-all <?php echo $wi===0?'w-7 bg-cyan':'w-2.5 bg-slate-600'; ?>"></button><?php } ?></div>
       </div>
     </div>
@@ -237,10 +237,10 @@ $techLogos = ['Node.js'=>'nodejs.png','Express'=>'expressjs.png','Django'=>'djon
     <div class="mb-14 max-w-5xl mx-auto">
       <p class="font-headline font-semibold text-cyan text-sm uppercase tracking-wider mb-2">FAQs</p>
       <h2 class="font-headline font-bold text-3xl md:text-4xl text-navy mb-4">Curious about working with us?</h2>
-      <p class="text-slate-600 text-lg">Get the answers to common questions about working with Aussie App Studio.</p>
+      <p class="text-slate-600 text-lg">Get the answers to common questions about working with Kiwi Apps Studio.</p>
     </div>
     <div class="space-y-4 max-w-5xl mx-auto">
-      <?php $homeFaqs = [['Do you work with clients outside Australia?','Yes. We serve brands in Australia, the USA, and New Zealand with collaboration timed to your time zone.'],['What tech stack do you use?','We build with React, Flutter, Node.js, and proven modern tools.'],['How do you handle time zones?','We align our availability to your business hours.'],['Do you offer ongoing support?','Yes. From launch we offer maintenance, updates, and support.'],["What's the typical project timeline?","It depends on scope. We'll give you a clear timeline after we understand your brief."]];
+      <?php $homeFaqs = [['Do you work with clients outside New Zealand?','Yes. We serve brands in New Zealand and internationally with collaboration timed to your time zone.'],['What tech stack do you use?','We build with React, Flutter, Node.js, and proven modern tools.'],['How do you handle time zones?','We align our availability to your business hours.'],['Do you offer ongoing support?','Yes. From launch we offer maintenance, updates, and support.'],["What's the typical project timeline?","It depends on scope. We'll give you a clear timeline after we understand your brief."]];
       foreach ($homeFaqs as $fi => $faq) { ?>
       <div data-faq-item class="rounded-2xl border-2 bg-slate-50/50 <?php echo $fi===0?'faq-open border-cyan/40 shadow-lg':'border-slate-200'; ?>">
         <button type="button" data-faq-toggle class="w-full px-6 py-5 flex justify-between items-center gap-4 text-left" aria-expanded="<?php echo $fi===0?'true':'false'; ?>">

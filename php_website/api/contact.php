@@ -95,7 +95,7 @@ if (is_file($configFile)) {
         // Avoid "certificate verify failed" on Windows/localhost (e.g. Mailtrap)
         $mail->SMTPOptions = ['ssl' => ['verify_peer' => false, 'verify_peer_name' => false]];
         $mail->CharSet = \PHPMailer\PHPMailer\PHPMailer::CHARSET_UTF8;
-        $mail->setFrom($config['fromEmail'], 'Aussie App Studio');
+        $mail->setFrom($config['fromEmail'], 'Kiwi Apps Studio');
         $mail->addAddress($config['notificationEmail']);
         $mail->addReplyTo($email, $name);
         $mail->Subject = $subject;

@@ -1,5 +1,5 @@
 <?php
-$page_title = 'Services | Aussie App Studio';
+$page_title = 'Services | Kiwi Apps Studio';
 $current_page = 'services';
 require_once __DIR__ . '/includes/header.php';
 $base = base_url('');
@@ -10,9 +10,9 @@ $assets = asset_url('');
     <nav class="text-sm text-slate-400 mb-6"><a href="<?php echo $base; ?>index.php" class="hover:text-cyan-light">Home</a> / <span class="text-white font-medium">Services</span></nav>
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
       <div>
-        <p class="text-cyan-light font-body font-medium text-sm uppercase tracking-wider mb-4">Full stack development for Australia, USA & NZ</p>
+        <p class="text-cyan-light font-body font-medium text-sm uppercase tracking-wider mb-4">Full stack development for New Zealand</p>
         <h1 class="font-headline font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">Web & mobile app <span class="text-cyan-light">development services</span></h1>
-        <p class="text-xl text-slate-300 leading-relaxed mb-8 max-w-xl">From strategy and UI/UX design to full stack development and ongoing support. We build software that converts and scales for Australian businesses and beyond. Get a quote or discuss your project in the form.</p>
+        <p class="text-xl text-slate-300 leading-relaxed mb-8 max-w-xl">From strategy and UI/UX design to full stack development and ongoing support. We build software that converts and scales for New Zealand businesses and beyond. Get a quote or discuss your project in the form.</p>
         <a href="<?php echo $base; ?>contact.php" class="inline-flex items-center gap-2 px-6 py-3.5 bg-cyan hover:bg-cyan-light text-navy font-body font-semibold rounded-xl">Get a quote</a>
       </div>
       <div class="relative max-w-md mx-auto lg:ml-auto">
@@ -71,7 +71,7 @@ $assets = asset_url('');
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
       <div>
         <h2 class="font-headline font-bold text-2xl md:text-3xl text-navy mb-6">Full stack services, from strategy to launch</h2>
-        <p class="text-slate-600 leading-relaxed mb-4">We cover the full product lifecycle: web development with React and Node.js, mobile app development with Flutter and React Native, UI/UX design, and ongoing support. Australian businesses and startups choose us for time zone aligned collaboration and a conversion first approach.</p>
+        <p class="text-slate-600 leading-relaxed mb-4">We cover the full product lifecycle: web development with React and Node.js, mobile app development with Flutter and React Native, UI/UX design, and ongoing support. New Zealand businesses and startups choose us for time zone aligned collaboration and a conversion first approach.</p>
         <p class="text-slate-600 leading-relaxed mb-6">Not sure whether you need a web app, a mobile app, or both? We will review your goals and timeline, then recommend the right mix. No obligation, just a straight conversation about what you need.</p>
         <a href="<?php echo $base; ?>contact.php" class="inline-flex items-center gap-2 text-cyan font-body font-semibold hover:text-cyan-dark">Get a free consultation <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
       </div>

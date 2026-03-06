@@ -1,5 +1,5 @@
 <?php
-$page_title = 'Aussie App Studio | Web & Mobile App Development';
+$page_title = 'Kiwi Apps Studio | Web & Mobile App Development | New Zealand';
 $current_page = 'home';
 require_once __DIR__ . '/includes/header.php';
 $base = base_url('');

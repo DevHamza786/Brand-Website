@@ -1,5 +1,5 @@
 <?php
-$page_title = 'Mobile App Development Australia | Flutter, React Native | iOS & Android | Aussie App Studio';
+$page_title = 'Mobile App Development New Zealand | Flutter, React Native | iOS & Android | Kiwi Apps Studio';
 $current_page = 'services';
 require_once __DIR__ . '/../includes/header.php';
 $base = base_url('');
@@ -9,7 +9,7 @@ $service_breadcrumb = [['label'=>'Home','href'=>'index.php'],['label'=>'Services
 $service_subheading = 'iOS & Android app development';
 $service_headline = 'Mobile App Development:';
 $service_headline_highlight = 'Flutter & React Native';
-$service_description = 'We build native and cross platform mobile apps for Australian and international brands. One codebase for iOS and Android, faster launch and lower cost. From concept to app store and beyond. Get a free quote or discuss your app idea in the form.';
+$service_description = 'We build native and cross platform mobile apps for New Zealand and international brands. One codebase for iOS and Android, faster launch and lower cost. From concept to app store and beyond. Get a free quote or discuss your app idea in the form.';
 $service_cta_text = 'Get a free quote';
 require_once __DIR__ . '/../includes/service-hero-with-form.php';
 ?>
@@ -87,8 +87,8 @@ require_once __DIR__ . '/../includes/service-hero-with-form.php';
 <?php require_once __DIR__ . '/../includes/tech-section.php'; ?>
 
 <?php
-$packages_phone = defined('SITE_PHONE') ? SITE_PHONE : '0488 845 048';
-$packages_abn = defined('SITE_ABN') ? SITE_ABN : '31 683 720 943';
+$packages_phone = defined('SITE_PHONE') ? SITE_PHONE : '03 965 9343';
+$packages_nzbn = defined('SITE_NZBN') ? SITE_NZBN : '9429052012983';
 $packages_base_features = [
   'Splash Screen Animations',
   'Unlimited Revisions',
@@ -138,8 +138,8 @@ $packages_tiers = [
         <div class="pt-4 border-t border-indigo-400/30 flex flex-wrap justify-between gap-4 text-sm">
           <div>
             <p class="text-slate-300">Share your idea?</p>
-            <a href="tel:<?php echo defined('SITE_PHONE_RAW') ? SITE_PHONE_RAW : '0488845048'; ?>" class="font-semibold text-white hover:text-cyan-300 transition-colors block"><?php echo htmlspecialchars($packages_phone); ?></a>
-            <span class="text-slate-400 text-xs block mt-0.5">ABN <?php echo htmlspecialchars($packages_abn); ?></span>
+            <a href="tel:<?php echo defined('SITE_PHONE_RAW') ? SITE_PHONE_RAW : '039659343'; ?>" class="font-semibold text-white hover:text-cyan-300 transition-colors block"><?php echo htmlspecialchars($packages_phone); ?></a>
+            <span class="text-slate-400 text-xs block mt-0.5">NZBN <?php echo htmlspecialchars($packages_nzbn); ?></span>
           </div>
           <div class="text-right">
             <p class="text-slate-300">Want to discuss?</p>
@@ -160,8 +160,8 @@ $packages_tiers = [
     </div>
     <div class="text-slate-700 leading-relaxed space-y-6">
       <p>Building an app for both iOS and Android used to mean two separate codebases and two teams. Today we use Flutter and React Native so one codebase runs on both platforms. That cuts development time and cost while still delivering a native feel. Flutter gives you pixel perfect UI and fast performance; React Native lets you reuse web skills and ship quickly. We pick the right fit for your product and your timeline.</p>
-      <p>Our mobile app development team has shipped apps for startups and enterprises in Australia, New Zealand, and the US. We handle the full journey: discovery and wireframes, UI design, development, testing, app store submission, and ongoing updates. You get a single team that owns the outcome. We also build and integrate the backend APIs and admin tools so your app has a solid foundation.</p>
-      <p>We work in your time zone. If you are in Sydney or Melbourne you get calls and updates in your business hours. If you have an app idea and want a team that communicates clearly and delivers on time, get in touch. Tell us what you want to build and we will come back with a scope and a quote. No obligation.</p>
+      <p>Our mobile app development team has shipped apps for startups and enterprises across New Zealand and beyond. We handle the full journey: discovery and wireframes, UI design, development, testing, app store submission, and ongoing updates. You get a single team that owns the outcome. We also build and integrate the backend APIs and admin tools so your app has a solid foundation.</p>
+      <p>We work in your time zone. If you are in Auckland or Wellington you get calls and updates in your business hours. If you have an app idea and want a team that communicates clearly and delivers on time, get in touch. Tell us what you want to build and we will come back with a scope and a quote. No obligation.</p>
     </div>
   </div>
 </section>

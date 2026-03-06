@@ -1,5 +1,5 @@
 <?php
-$page_title = 'UI/UX Design Agency Australia | User Experience & Interface Design | Aussie App Studio';
+$page_title = 'UI/UX Design Agency New Zealand | User Experience & Interface Design | Kiwi Apps Studio';
 $current_page = 'services';
 require_once __DIR__ . '/../includes/header.php';
 $base = base_url('');
@@ -115,7 +115,7 @@ require_once __DIR__ . '/../includes/service-hero-with-form.php';
     </div>
     <div class="text-slate-700 leading-relaxed space-y-6">
       <p>Good UI/UX design is not just about how things look. It is about how users move through your product and where they get stuck. We start with discovery and user research so we understand your audience and your goals. Then we map flows and build wireframes so you can see the structure before any visual design. That way we catch problems early and avoid expensive changes later.</p>
-      <p>We design for conversion. Every screen has a job: inform, persuade, or convert. We use clear hierarchy, obvious calls to action, and friction free forms. We also think about accessibility so more people can use your product. When we hand off to development we provide a design system and specs so the build matches the design. Australian and international clients choose us when they want one team for both design and development, or when they need a dedicated design phase before they commit to build.</p>
+      <p>We design for conversion. Every screen has a job: inform, persuade, or convert. We use clear hierarchy, obvious calls to action, and friction free forms. We also think about accessibility so more people can use your product. When we hand off to development we provide a design system and specs so the build matches the design. New Zealand and international clients choose us when they want one team for both design and development, or when they need a dedicated design phase before they commit to build.</p>
     </div>
   </div>
 </section>

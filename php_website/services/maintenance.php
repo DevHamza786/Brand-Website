@@ -1,5 +1,5 @@
 <?php
-$page_title = 'App & Web Support and Maintenance Australia | Ongoing Development | Aussie App Studio';
+$page_title = 'App & Web Support and Maintenance New Zealand | Ongoing Development | Kiwi Apps Studio';
 $current_page = 'services';
 require_once __DIR__ . '/../includes/header.php';
 $base = base_url('');
@@ -51,7 +51,7 @@ require_once __DIR__ . '/../includes/service-hero-with-form.php';
     <p class="font-headline font-semibold text-cyan text-sm uppercase tracking-wider mb-2">Why Partner with Us</p>
     <h2 class="font-headline font-bold text-3xl md:text-4xl text-navy mb-4 text-center">Why choose us for support and maintenance</h2>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-      <?php foreach ([['Experienced with your stack','We work on React, Node.js, Flutter, and common backends. We can support what you already have or what we built for you.'],['Predictable capacity & cost','Retainer plans give you a fixed monthly budget and guaranteed capacity so you can plan without surprise invoices.'],['Same time zone','Australian and international clients get responses and fixes in their business hours. No overnight handoffs or delayed replies.'],['Clear process','Dedicated channel, prioritisation, and regular releases. You always know what is in progress and what is next.']] as $item) { ?>
+      <?php foreach ([['Experienced with your stack','We work on React, Node.js, Flutter, and common backends. We can support what you already have or what we built for you.'],['Predictable capacity & cost','Retainer plans give you a fixed monthly budget and guaranteed capacity so you can plan without surprise invoices.'],['Same time zone','New Zealand and international clients get responses and fixes in their business hours. No overnight handoffs or delayed replies.'],['Clear process','Dedicated channel, prioritisation, and regular releases. You always know what is in progress and what is next.']] as $item) { ?>
       <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-cyan/20 hover:shadow-lg transition-all duration-300 text-center">
         <h3 class="font-headline font-semibold text-navy mb-3"><?php echo htmlspecialchars($item[0]); ?></h3>
         <p class="text-slate-600 text-sm leading-relaxed"><?php echo htmlspecialchars($item[1]); ?></p>
@@ -115,7 +115,7 @@ require_once __DIR__ . '/../includes/service-hero-with-form.php';
     </div>
     <div class="text-slate-700 leading-relaxed space-y-6">
       <p>Software does not stand still. Browsers and mobile operating systems change. Security vulnerabilities get discovered. Users find bugs. Our support and maintenance services keep your web or mobile app current. We apply security patches, fix bugs, and tune performance so your product stays reliable and fast. We also add small features and improvements so the product evolves with your business.</p>
-      <p>We work with clients who built their product with us and clients who built elsewhere. We use a dedicated support channel so you have one place to report issues and request work. You get clear priorities, realistic timelines, and a single team that owns the outcome. We also offer retainer arrangements so you have a fixed monthly budget and a predictable capacity. Australian and international businesses choose us because we work in their time zone. When something breaks you want a fix fast.</p>
+      <p>We work with clients who built their product with us and clients who built elsewhere. We use a dedicated support channel so you have one place to report issues and request work. You get clear priorities, realistic timelines, and a single team that owns the outcome. We also offer retainer arrangements so you have a fixed monthly budget and a predictable capacity. New Zealand and international businesses choose us because we work in their time zone. When something breaks you want a fix fast.</p>
     </div>
   </div>
 </section>

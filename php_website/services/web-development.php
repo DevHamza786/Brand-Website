@@ -1,15 +1,15 @@
 <?php
-$page_title = 'Custom Web Development Australia | React, Node.js, Full Stack | Aussie App Studio';
+$page_title = 'Custom Web Development New Zealand | React, Node.js, Full Stack | Kiwi Apps Studio';
 $current_page = 'services';
 require_once __DIR__ . '/../includes/header.php';
 $base = base_url('');
 $assets = asset_url('');
 
 $service_breadcrumb = [['label'=>'Home','href'=>'index.php'],['label'=>'Services','href'=>'services.php'],['label'=>'Web Development','href'=>null]];
-$service_subheading = 'Custom web development for Australia, NZ & US';
+$service_subheading = 'Custom web development for New Zealand';
 $service_headline = 'Custom Web Development:';
 $service_headline_highlight = 'React, Node.js, Full Stack';
-$service_description = 'We build scalable web applications with React and Node.js for startups and enterprises across Australia, New Zealand, and the US. From e‑commerce and SaaS dashboards to customer portals and internal tools. Get a free quote or discuss your project in the form.';
+$service_description = 'We build scalable web applications with React and Node.js for startups and enterprises across New Zealand. From e‑commerce and SaaS dashboards to customer portals and internal tools. Get a free quote or discuss your project in the form.';
 $service_cta_text = 'Get a free quote';
 require_once __DIR__ . '/../includes/service-hero-with-form.php';
 ?>
@@ -120,8 +120,8 @@ require_once __DIR__ . '/../includes/service-hero-with-form.php';
     </div>
     <div class="text-slate-700 leading-relaxed space-y-6">
       <p>Our web development services are built around modern, proven technology. We use React and Next.js for the front end so your users get a fast, responsive experience on any device. On the server side we use Node.js and TypeScript so your application is maintainable and easy to extend. When we need a database we typically choose PostgreSQL for relational data or MongoDB when a document store fits better. Every stack decision is made with your long term goals in mind, not just the quickest path to launch.</p>
-      <p>Australian businesses come to us when they need more than a basic website. They need a web application that handles real users, real data, and real transactions. That might be an e‑commerce platform with custom checkout and inventory logic, a SaaS product with subscriptions and dashboards, or an internal tool that streamlines operations. We have built all of these and we know how to scope them so you get a clear timeline and a fixed price. No endless iterations or surprise invoices.</p>
-      <p>Performance and SEO are part of every web development project we deliver. Security is non-negotiable: we follow OWASP guidelines, use parameterised queries, and ensure authentication and authorisation are implemented correctly. We work with clients in Sydney, Melbourne, Brisbane, Auckland, and the United States. Time zone aligned so you get responses and calls in your business hours.</p>
+      <p>New Zealand businesses come to us when they need more than a basic website. They need a web application that handles real users, real data, and real transactions. That might be an e‑commerce platform with custom checkout and inventory logic, a SaaS product with subscriptions and dashboards, or an internal tool that streamlines operations. We have built all of these and we know how to scope them so you get a clear timeline and a fixed price. No endless iterations or surprise invoices.</p>
+      <p>Performance and SEO are part of every web development project we deliver. Security is non-negotiable: we follow OWASP guidelines, use parameterised queries, and ensure authentication and authorisation are implemented correctly. We work with clients in Auckland, Wellington, Christchurch, and across New Zealand. Time zone aligned so you get responses and calls in your business hours.</p>
     </div>
   </div>
 </section>

@@ -11,11 +11,12 @@ if (!defined('ASSETS_PATH')) {
 }
 define('DATA_DIR', __DIR__ . '/data');
 
-define('SITE_PHONE', '0488 845 048');
-define('SITE_PHONE_RAW', '0488845048');
-define('SITE_ABN', '31 683 720 943');
-define('SITE_EMAIL', 'Info@aussieappstudio.com.au');
-define('SITE_ADDRESS', 'Victoria, Melbourne, Australia');
+define('SITE_NAME', 'Kiwi Apps Studio');
+define('SITE_PHONE', '03 965 9343');
+define('SITE_PHONE_RAW', '039659343');
+define('SITE_NZBN', '9429052012983');
+define('SITE_EMAIL', 'info@kiwiappstudio.co.nz');
+define('SITE_ADDRESS', '1/8 Ireland Place, Ranui, Auckland 0612, New Zealand');
 
 function base_url($path = '') {
   $p = rtrim(BASE_PATH, '/');

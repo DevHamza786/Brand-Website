@@ -1,5 +1,5 @@
 <?php
-$page_title = 'Work | Aussie App Studio';
+$page_title = 'Work | Kiwi Apps Studio';
 $current_page = 'work';
 require_once __DIR__ . '/includes/header.php';
 $base = base_url('');
@@ -33,7 +33,7 @@ $webProjects = [
   <div class="max-w-content mx-auto px-6 md:px-10 relative z-10">
     <nav class="text-sm text-slate-400 mb-10" aria-label="Breadcrumb"><a href="<?php echo $base; ?>index.php" class="hover:text-cyan-light">Home</a> / <span class="text-white font-medium">Work</span></nav>
     <h1 class="font-headline font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-8 max-w-4xl">Web and Mobile App Projects: Case Studies and Portfolio</h1>
-    <p class="text-xl text-slate-300 max-w-3xl leading-relaxed">A selection of web development and mobile app development projects we have delivered for brands in Australia and beyond. Each one built for scale, conversion, and long term success.</p>
+    <p class="text-xl text-slate-300 max-w-3xl leading-relaxed">A selection of web development and mobile app development projects we have delivered for brands in New Zealand and beyond. Each one built for scale, conversion, and long term success.</p>
   </div>
 </section>
 
@@ -43,7 +43,7 @@ $webProjects = [
       <div>
         <p class="text-xs font-body font-semibold tracking-[0.28em] uppercase text-cyan-light mb-3">Portfolio</p>
         <h2 class="font-headline font-bold text-3xl md:text-4xl text-white mb-4">Web & mobile product experiences in the wild</h2>
-        <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-6">Instead of static thumbnails, here's a closer look at real interface work we've shipped for brands across Australia, New Zealand and the US, from browser-based platforms to app‑store ready screens.</p>
+        <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-6">Instead of static thumbnails, here's a closer look at real interface work we've shipped for brands across New Zealand, from browser-based platforms to app‑store ready screens.</p>
         <p class="text-slate-400 text-sm leading-relaxed">We're opinionated about clarity, hierarchy and performance. Every screen here is designed to feel fast, legible and conversion‑focused on the devices your customers actually use.</p>
       </div>
       <div class="relative">

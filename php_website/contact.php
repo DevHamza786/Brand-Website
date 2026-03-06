@@ -1,13 +1,13 @@
 <?php
-$page_title = 'Contact Us | Get a Quote | Aussie App Studio';
+$page_title = 'Contact Us | Get a Quote | Kiwi Apps Studio';
 $current_page = 'contact';
 require_once __DIR__ . '/includes/header.php';
 $base = base_url('');
-if (!defined('SITE_PHONE')) define('SITE_PHONE', '0488 845 048');
-if (!defined('SITE_PHONE_RAW')) define('SITE_PHONE_RAW', '0488845048');
-if (!defined('SITE_ABN')) define('SITE_ABN', '31 683 720 943');
-if (!defined('SITE_EMAIL')) define('SITE_EMAIL', 'Info@aussieappstudio.com.au');
-if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', 'Victoria, Melbourne, Australia');
+if (!defined('SITE_PHONE')) define('SITE_PHONE', '03 965 9343');
+if (!defined('SITE_PHONE_RAW')) define('SITE_PHONE_RAW', '039659343');
+if (!defined('SITE_NZBN')) define('SITE_NZBN', '9429052012983');
+if (!defined('SITE_EMAIL')) define('SITE_EMAIL', 'info@kiwiappstudio.co.nz');
+if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', '1/8 Ireland Place, Ranui, Auckland 0612, New Zealand');
 ?>
 <section id="form" class="pt-24 md:pt-28 pb-20 md:pb-28 scroll-mt-24 bg-navy">
   <div class="max-w-content mx-auto px-6 md:px-10">
@@ -43,9 +43,9 @@ if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', 'Victoria, Melbourne, Austr
         <div class="bg-slate-50 p-6 md:p-8 lg:p-10 flex flex-col justify-center">
           <div class="space-y-6">
             <div><p class="font-headline font-semibold text-cyan text-sm uppercase tracking-wider mb-1.5">Email</p><a href="mailto:<?php echo htmlspecialchars(SITE_EMAIL); ?>" class="font-body font-medium text-navy hover:text-cyan-dark underline underline-offset-2"><?php echo htmlspecialchars(SITE_EMAIL); ?></a></div>
-            <div><p class="font-headline font-semibold text-cyan text-sm uppercase tracking-wider mb-1.5">Phone</p><a href="tel:<?php echo SITE_PHONE_RAW; ?>" class="font-body font-medium text-navy hover:text-cyan-dark underline underline-offset-2 block"><?php echo htmlspecialchars(SITE_PHONE); ?></a><span class="text-slate-600 text-sm block mt-0.5">ABN <?php echo htmlspecialchars(SITE_ABN); ?></span></div>
+            <div><p class="font-headline font-semibold text-cyan text-sm uppercase tracking-wider mb-1.5">Phone</p><a href="tel:<?php echo SITE_PHONE_RAW; ?>" class="font-body font-medium text-navy hover:text-cyan-dark underline underline-offset-2 block"><?php echo htmlspecialchars(SITE_PHONE); ?></a><span class="text-slate-600 text-sm block mt-0.5">NZBN <?php echo htmlspecialchars(SITE_NZBN); ?></span></div>
             <div><p class="font-headline font-semibold text-cyan text-sm uppercase tracking-wider mb-1.5">Address</p><p class="text-slate-700 font-body leading-relaxed"><?php echo htmlspecialchars(SITE_ADDRESS); ?></p></div>
-            <div><p class="font-headline font-semibold text-cyan text-sm uppercase tracking-wider mb-4">Follow us on</p><div class="flex gap-4"><a href="https://www.linkedin.com/company/aussie-app-studio" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-cyan" aria-label="LinkedIn"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div></div>
+            <div><p class="font-headline font-semibold text-cyan text-sm uppercase tracking-wider mb-4">Follow us on</p><div class="flex gap-4"><a href="https://www.linkedin.com/company/kiwi-apps-studio" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-cyan" aria-label="LinkedIn"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div></div>
           </div>
         </div>
       </div>

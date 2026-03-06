@@ -2,11 +2,11 @@
 require_once __DIR__ . '/../config.php';
 $base = base_url('');
 $assets = asset_url('');
-if (!defined('SITE_PHONE')) define('SITE_PHONE', '0488 845 048');
-if (!defined('SITE_PHONE_RAW')) define('SITE_PHONE_RAW', '0488845048');
-if (!defined('SITE_ABN')) define('SITE_ABN', '31 683 720 943');
-if (!defined('SITE_EMAIL')) define('SITE_EMAIL', 'Info@aussieappstudio.com.au');
-if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', 'Victoria, Melbourne, Australia');
+if (!defined('SITE_PHONE')) define('SITE_PHONE', '03 965 9343');
+if (!defined('SITE_PHONE_RAW')) define('SITE_PHONE_RAW', '039659343');
+if (!defined('SITE_NZBN')) define('SITE_NZBN', '9429052012983');
+if (!defined('SITE_EMAIL')) define('SITE_EMAIL', 'info@kiwiappstudio.co.nz');
+if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', '1/8 Ireland Place, Ranui, Auckland 0612, New Zealand');
 ?>
 </main>
 <footer class="bg-navy text-white">
@@ -14,7 +14,7 @@ if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', 'Victoria, Melbourne, Austr
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
       <div>
         <a href="<?php echo $base; ?>index.php" class="inline-block mb-5"><img src="<?php echo $assets; ?>logo.png" alt="" class="h-10 w-auto object-contain opacity-95"></a>
-        <p class="text-slate-300 text-sm leading-relaxed max-w-xs">Digital products that win in your time zone. Serving Australia, USA & New Zealand.</p>
+        <p class="text-slate-300 text-sm leading-relaxed max-w-xs">Digital products that win in your time zone. Serving New Zealand.</p>
         <p class="mt-4 text-slate-400 text-sm"><?php echo htmlspecialchars(SITE_ADDRESS); ?></p>
       </div>
       <div>
@@ -41,13 +41,13 @@ if (!defined('SITE_ADDRESS')) define('SITE_ADDRESS', 'Victoria, Melbourne, Austr
           <li><a href="<?php echo $base; ?>terms.php" class="text-slate-300 hover:text-cyan-light text-sm">Terms & Conditions</a></li>
         </ul>
         <p class="mt-6 text-slate-400 text-sm"><a href="mailto:<?php echo htmlspecialchars(SITE_EMAIL); ?>" class="hover:text-cyan-light"><?php echo htmlspecialchars(SITE_EMAIL); ?></a></p>
-        <p class="mt-2 text-slate-400 text-sm"><a href="tel:<?php echo SITE_PHONE_RAW; ?>" class="hover:text-cyan-light block"><?php echo htmlspecialchars(SITE_PHONE); ?></a><span class="block text-slate-500 text-xs mt-0.5">ABN <?php echo htmlspecialchars(SITE_ABN); ?></span></p>
+        <p class="mt-2 text-slate-400 text-sm"><a href="tel:<?php echo SITE_PHONE_RAW; ?>" class="hover:text-cyan-light block"><?php echo htmlspecialchars(SITE_PHONE); ?></a><span class="block text-slate-500 text-xs mt-0.5">NZBN <?php echo htmlspecialchars(SITE_NZBN); ?></span></p>
         <a href="<?php echo $base; ?>contact.php" class="inline-block mt-4 px-5 py-2.5 border-2 border-cyan text-cyan rounded-xl font-body font-medium text-sm hover:bg-cyan hover:text-navy">Book a call</a>
       </div>
     </div>
     <div class="mt-16 pt-8 border-t border-slate-700 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <p class="text-slate-500 text-sm">© <?php echo date('Y'); ?> Aussie App Studio. All rights reserved.</p>
-      <p class="text-slate-500 text-sm">Made in Australia</p>
+      <p class="text-slate-500 text-sm">© <?php echo date('Y'); ?> Kiwi Apps Studio. All rights reserved.</p>
+      <p class="text-slate-500 text-sm">Made in New Zealand</p>
     </div>
   </div>
 </footer>
